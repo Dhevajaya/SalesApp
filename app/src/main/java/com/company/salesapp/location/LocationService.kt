@@ -4,15 +4,21 @@ import android.app.Notification
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.location.Location
 import androidx.core.app.NotificationCompat
 import androidx.lifecycle.LifecycleService
 import androidx.lifecycle.lifecycleScope
 import com.company.salesapp.MainActivity
 import com.company.salesapp.R
 import com.company.salesapp.SalesApp
+import com.company.salesapp.config.AppConfig
 import com.company.salesapp.database.AppDatabase
 import com.company.salesapp.database.LocationEventEntity
+import com.company.salesapp.navigation.RerouteManager
+import com.company.salesapp.network.RouteRepository
 import com.company.salesapp.sync.SyncManager
+import com.company.salesapp.utils.TrackingPrefs
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -32,6 +38,7 @@ import java.util.UUID
  * - Memfilter update lewat LocationProcessor (accuracy & minimum movement)
  * - Menyimpan hasil ke Room Local Queue (offline-safe, Section 12)
  * - Memicu SyncManager untuk mengirim ke Laravel API
+ * - Mengecek deviasi rute -> minta reroute bila perlu (Section 22, lewat RerouteManager)
  *
  * TIDAK menaruh business logic Laravel di sini (Section 3 & 28).
  */
@@ -39,13 +46,22 @@ class LocationService : LifecycleService() {
 
     private lateinit var locationManager: AppLocationManager
     private lateinit var processor: LocationProcessor
-    private lateinit var trackingSessionIdProvider: () -> Long?
+    private lateinit var trackingPrefs: TrackingPrefs
+    private lateinit var rerouteManager: RerouteManager
 
     override fun onCreate() {
         super.onCreate()
         locationManager = AppLocationManager(this)
-        processor = LocationProcessor()
-        trackingSessionIdProvider = { currentTrackingSessionId }
+        processor = LocationProcessor(
+            maxAcceptableAccuracyMeters = AppConfig.MAX_ACCEPTABLE_ACCURACY_METERS,
+            minMovementMeters = AppConfig.MIN_MOVEMENT_METERS,
+            minIntervalMillis = AppConfig.MIN_INTERVAL_MS
+        )
+        trackingPrefs = TrackingPrefs.getInstance(this)
+        rerouteManager = RerouteManager(
+            routeRepository = RouteRepository(this),
+            trackingPrefs = trackingPrefs
+        )
         _lifecycleState.value = ServiceLifecycleState.STOPPED
     }
 
@@ -54,8 +70,10 @@ class LocationService : LifecycleService() {
 
         when (intent?.action) {
             ACTION_START -> {
-                currentTrackingSessionId = intent.getLongExtra(EXTRA_TRACKING_SESSION_ID, -1L)
+                val sessionId = intent.getLongExtra(EXTRA_TRACKING_SESSION_ID, -1L)
                     .let { if (it == -1L) null else it }
+                // Bila dipanggil BootReceiver tanpa extra, pakai session terakhir yang tersimpan.
+                currentTrackingSessionId = sessionId ?: trackingPrefs.trackingSessionId
                 startTracking()
             }
             ACTION_STOP -> stopTracking()
@@ -69,12 +87,27 @@ class LocationService : LifecycleService() {
         _lifecycleState.value = ServiceLifecycleState.STARTING
         processor.reset()
 
-        startForeground(NOTIFICATION_ID, buildNotification(getString(R.string.notif_tracking_text)))
+        try {
+            startForeground(NOTIFICATION_ID, buildNotification(getString(R.string.notif_tracking_text)))
+        } catch (e: Exception) {
+            // Android 14+ bisa menolak startForeground bila izin lokasi dicabut tepat
+            // sebelum service dimulai. Jangan crash — berhenti dengan bersih.
+            _lifecycleState.value = ServiceLifecycleState.STOPPED
+            stopSelf()
+            return
+        }
 
-        locationManager.startUpdates { location ->
+        // Simpan state supaya BootReceiver tahu tracking perlu dilanjutkan setelah reboot.
+        trackingPrefs.trackingActive = true
+        trackingPrefs.trackingSessionId = currentTrackingSessionId
+
+        locationManager.startUpdates(AppConfig.LOCATION_UPDATE_INTERVAL_MS) { location ->
+            lastKnownLocation = location
+
             val snapshot = processor.process(location)
             if (snapshot != null) {
                 enqueueLocation(snapshot)
+                checkRouteDeviation(location)
                 _lifecycleState.value = ServiceLifecycleState.ACTIVE
             }
             // Bila snapshot null (difilter accuracy/jarak), lifecycle tetap ACTIVE
@@ -89,13 +122,15 @@ class LocationService : LifecycleService() {
         _lifecycleState.value = ServiceLifecycleState.STOPPING
         locationManager.stopUpdates()
         currentTrackingSessionId = null
+        lastKnownLocation = null
+        trackingPrefs.clearSession()
         _lifecycleState.value = ServiceLifecycleState.STOPPED
         stopForeground(STOP_FOREGROUND_REMOVE)
         stopSelf()
     }
 
     private fun enqueueLocation(snapshot: LocationSnapshot) {
-        lifecycleScope.launch {
+        lifecycleScope.launch(Dispatchers.IO) {
             val dao = AppDatabase.getInstance(applicationContext).locationEventDao()
             val entity = LocationEventEntity(
                 locationEventId = UUID.randomUUID().toString(),
@@ -103,12 +138,23 @@ class LocationService : LifecycleService() {
                 longitude = snapshot.longitude,
                 accuracy = snapshot.accuracy,
                 recordedAt = isoFormat(snapshot.recordedAtEpochMillis),
-                trackingSessionId = trackingSessionIdProvider()
+                trackingSessionId = currentTrackingSessionId
             )
             dao.insert(entity)
             // Minta sync segera bila online; SyncManager sendiri yang menentukan
             // apakah langsung kirim atau menunggu WorkManager periodik (Section 12).
             SyncManager.requestImmediateSync(applicationContext)
+        }
+    }
+
+    /**
+     * Section 22: cek deviasi rute. Sengaja dijalankan di IO dan sepenuhnya
+     * "best effort" — kegagalannya tidak boleh mengganggu perekaman lokasi,
+     * karena tracking jauh lebih penting daripada rute yang up-to-date.
+     */
+    private fun checkRouteDeviation(location: Location) {
+        lifecycleScope.launch(Dispatchers.IO) {
+            rerouteManager.onNewLocation(location)
         }
     }
 
@@ -149,6 +195,16 @@ class LocationService : LifecycleService() {
 
         @Volatile
         private var currentTrackingSessionId: Long? = null
+
+        /**
+         * Lokasi mentah terakhir yang diterima (belum tentu lolos filter processor).
+         * Dipakai WebViewBridge.getCurrentLocation() supaya halaman Laravel bisa
+         * memvalidasi jarak saat check-in tanpa membuka GPS sendiri lewat browser.
+         */
+        @Volatile
+        private var lastKnownLocation: Location? = null
+
+        fun lastKnownLocation(): Location? = lastKnownLocation
 
         private val _lifecycleState = MutableStateFlow(ServiceLifecycleState.STOPPED)
         val lifecycleState: StateFlow<ServiceLifecycleState> = _lifecycleState.asStateFlow()

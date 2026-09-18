@@ -5,14 +5,24 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
+/**
+ * version 1 -> 2 : penambahan tabel `route_cache` (offline route caching, Section 22 & 25).
+ *
+ * exportSchema di-set false selama fase development supaya Gradle tidak perlu
+ * folder schema. Aktifkan kembali (+ set room.schemaLocation di build.gradle)
+ * sebelum rilis produksi, bersamaan dengan penggantian
+ * fallbackToDestructiveMigration() menjadi Migration resmi.
+ */
 @Database(
-    entities = [LocationEventEntity::class],
-    version = 1,
-    exportSchema = true
+    entities = [LocationEventEntity::class, RouteCacheEntity::class],
+    version = 2,
+    exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun locationEventDao(): LocationEventDao
+
+    abstract fun routeCacheDao(): RouteCacheDao
 
     companion object {
         @Volatile
@@ -25,8 +35,9 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "salesapp.db"
                 )
-                    // fallbackToDestructiveMigration hanya untuk fase development awal.
-                    // Ganti dengan migrasi resmi sebelum rilis produksi.
+                    // PERINGATAN: destructive migration MENGHAPUS antrian lokasi yang
+                    // belum ter-sync bila versi DB naik. Aman selama app belum dipakai
+                    // Sales beneran di lapangan. Ganti dengan Migration resmi sebelum rilis.
                     .fallbackToDestructiveMigration()
                     .build()
                     .also { INSTANCE = it }

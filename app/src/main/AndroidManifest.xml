@@ -29,6 +29,7 @@
         android:name=".SalesApp"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security_config"
         android:usesCleartextTraffic="${usesCleartextTraffic}"
@@ -46,10 +47,12 @@
             </intent-filter>
         </activity>
 
-        <!-- Phase F: Native Navigation Screen (skeleton, section 21) -->
+        <!-- Peta rute harian + follow-me (Section 25). Dibuka dari WebView:
+             window.Android.openRouteMap() -->
         <activity
             android:name=".map.MapActivity"
             android:exported="false"
+            android:label="@string/map_title"
             android:configChanges="orientation|screenSize|keyboardHidden" />
 
         <!-- Native Foreground Location Service (Section 10) -->
@@ -57,6 +60,20 @@
             android:name=".location.LocationService"
             android:exported="false"
             android:foregroundServiceType="location" />
+
+        <!-- Section 9: auto-resume tracking setelah device reboot.
+             Hanya lanjut bila sesi memang aktif + token masih ada + izin lokasi masih diberikan.
+             Catatan: sebagian OEM (Xiaomi/Oppo/Vivo) memblokir autostart kecuali diizinkan
+             manual di pengaturan device — itu batasan vendor, bukan bug. -->
+        <receiver
+            android:name=".location.BootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
 
         <!-- Sync Manager worker dijalankan via WorkManager, tidak perlu deklarasi service manual -->
 

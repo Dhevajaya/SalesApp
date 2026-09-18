@@ -51,3 +51,49 @@ data class GenericSuccessResponse(
     @SerializedName("success") val success: Boolean,
     @SerializedName("message") val message: String?
 )
+
+// =====================================================================
+// ROUTE (Section 19, 22, 25)
+// Android TIDAK memanggil TomTom langsung — semua lewat proxy Laravel.
+// Bentuk response di bawah ini harus disepakati dengan backend.
+// =====================================================================
+
+/** Satu titik geometry polyline rute. */
+data class GeoPointDto(
+    @SerializedName("lat") val lat: Double,
+    @SerializedName("lng") val lng: Double
+)
+
+/** Satu stop customer di rute harian. */
+data class RouteStopDto(
+    @SerializedName("customer_id") val customerId: Long,
+    @SerializedName("name") val name: String,
+    @SerializedName("latitude") val latitude: Double,
+    @SerializedName("longitude") val longitude: Double,
+    @SerializedName("sequence") val sequence: Int,
+    @SerializedName("status") val status: String? = null // pending | arrived | skipped
+)
+
+/**
+ * Response GET /api/sales/routes/today dan POST /api/sales/routes/reroute.
+ *
+ * `source` menandai asal data menurut server: cache | provider | fallback.
+ * `geometry` boleh null/kosong -> Android jatuh ke garis lurus antar stop
+ * (ditandai abu-abu di peta supaya tidak dikira rute jalan sungguhan).
+ */
+data class RouteResponse(
+    @SerializedName("success") val success: Boolean,
+    @SerializedName("source") val source: String?,
+    @SerializedName("route_id") val routeId: Long?,
+    @SerializedName("distance_meters") val distanceMeters: Int?,
+    @SerializedName("duration_seconds") val durationSeconds: Int?,
+    @SerializedName("stops") val stops: List<RouteStopDto>?,
+    @SerializedName("geometry") val geometry: List<GeoPointDto>?
+)
+
+/** Body POST /api/sales/routes/reroute — posisi Sales saat menyimpang. */
+data class RerouteRequest(
+    @SerializedName("latitude") val latitude: Double,
+    @SerializedName("longitude") val longitude: Double,
+    @SerializedName("tracking_session_id") val trackingSessionId: Long? = null
+)

@@ -12,13 +12,17 @@ kamu, dengan prioritas urutan sesuai *Section 39 — Prioritas Saat Mulai Coding
 [6] Room Queue        ✅ SELESAI
 [7] Offline Sync      ✅ SELESAI
 [8] Background Test   ⚠️  perlu kamu jalankan manual di device (lihat Section 33)
-[9] MapLibre          🟡 stub/TODO (map/MapActivity.kt)
-[10] TomTom Route     🟡 stub/TODO (map/RouteManager.kt)
-[11] Navigation       🟡 stub/TODO (navigation/)
+[9] MapLibre          ✅ SELESAI (map/MapActivity.kt — rute, stop, follow-me)
+[10] TomTom Route     ✅ sisi Android siap (map/RouteManager.kt) — endpoint Laravel belum
+[11] Navigation       🟡 sebagian (navigation/) — follow-me + jarak, BUKAN turn-by-turn
 [12] Visit            ⬜ belum — nanti nempel di WebView Laravel + bridge tambahan
 [13] Device            🟡 stub/TODO (device/DeviceManager.kt)
-[14] Kiosk             🟡 stub/TODO (device/KioskManager.kt)
+[14] Kiosk             ✅ screen pinning (device/KioskManager.kt) — BUKAN MDM kiosk
 ```
+
+> Detail apa saja yang berubah pada Phase D/F/H, kontrak endpoint route yang
+> perlu kamu buat di Laravel, dan batasan jujur tiap fitur: lihat
+> **`PERUBAHAN_DARI_ZIP.md`**.
 
 Checkpoint blueprint **"jangan lanjut ke MapLibre/TomTom sebelum Native GPS + queue + sync
 sudah benar"** sudah saya ikuti — nomor 1–7 dibuat penuh/berfungsi, 9 ke atas sengaja

@@ -53,6 +53,9 @@ class WebViewManager(
         CookieManager.getInstance().setAcceptThirdPartyCookies(webView, true)
 
         webView.addJavascriptInterface(bridge, WebViewBridge.JS_INTERFACE_NAME)
+        // Alias: halaman Laravel boleh memakai window.Android.* ATAU window.SalesNative.*
+        // Keduanya menunjuk ke instance bridge yang sama.
+        webView.addJavascriptInterface(bridge, WebViewBridge.JS_INTERFACE_ALIAS)
 
         webView.webViewClient = object : WebViewClient() {
 

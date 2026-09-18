@@ -19,7 +19,9 @@ android {
 
         // ==== BASE URL LARAVEL ====
         // DEV (Laragon lokal, diakses dari Android Emulator):
-        buildConfigField "String", "BASE_URL", "\"http://10.0.2.2:8000/\""
+        // buildConfigField "String", "BASE_URL", "\"http://10.0.2.2:8000/\""
+        // DEV (Laragon lokal, diakses dari HP FISIK lewat WiFi yang sama):
+        buildConfigField "String", "BASE_URL", "\"http://192.168.1.11:8000/\""
         // Ganti ke domain produksi nanti, contoh:
         // buildConfigField "String", "BASE_URL", "\"https://domain-perusahaan.com/\""
     }

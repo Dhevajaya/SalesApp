@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id bottomPanel
+id followMeButton
+id guidanceText
+id mapProgress
+id mapView
+id offlineBanner
+id progressBar
+id routeSummaryText
+id statusText
+id webView
+layout activity_main
+layout activity_map
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string map_follow_off
+string map_follow_on
+string map_no_assignment
+string map_permission_missing
+string map_route_unavailable
+string map_title
+string notif_channel_tracking
+string notif_tracking_text
+string notif_tracking_title
+string permission_rationale_message
+string permission_rationale_title
+style Theme.SalesApp
+xml network_security_config

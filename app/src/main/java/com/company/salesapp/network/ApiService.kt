@@ -39,4 +39,14 @@ interface ApiService {
 
     @GET("api/sales/tracking/status")
     suspend fun getTrackingStatus(): Response<TrackingStatusResponse>
+
+    // ---- Route (Section 19 & 22) ----
+    // Laravel bertindak sebagai proxy ke TomTom Orbis v3. Android TIDAK BOLEH
+    // memanggil TomTom langsung (Section 35 & 36).
+
+    @GET("api/sales/routes/today")
+    suspend fun getTodayRoute(): Response<RouteResponse>
+
+    @POST("api/sales/routes/reroute")
+    suspend fun postReroute(@Body body: RerouteRequest): Response<RouteResponse>
 }

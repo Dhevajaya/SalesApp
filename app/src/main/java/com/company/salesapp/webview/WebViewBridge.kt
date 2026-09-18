@@ -1,29 +1,41 @@
 package com.company.salesapp.webview
 
+import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.webkit.JavascriptInterface
 import android.webkit.WebView
+import com.company.salesapp.device.KioskManager
 import com.company.salesapp.location.LocationService
+import com.company.salesapp.map.MapActivity
 import com.company.salesapp.network.TokenStore
 import com.company.salesapp.utils.PermissionUtils
+import com.company.salesapp.utils.TrackingPrefs
 import com.google.gson.Gson
 
 /**
  * Section 5 blueprint - WebView <-> Native Bridge.
  *
- * Command yang didukung (dipanggil dari JS Laravel via Android.xxx(...)):
- *   START_TRACKING(trackingSessionId)
- *   STOP_TRACKING()
- *   OPEN_NAVIGATION(lat, lng, customerName)   -> TODO diisi saat Phase F (Navigation)
- *   STOP_NAVIGATION()                          -> TODO diisi saat Phase F
- *   GET_TRACKING_STATUS() -> return String JSON
- *   GET_CURRENT_LOCATION() -> return String JSON (TODO: last known location cache)
- *   SET_AUTH_TOKEN(token) -> simpan token API untuk request native
+ * Dipanggil dari JS halaman Laravel lewat `window.Android.xxx(...)`
+ * (alias `window.SalesNative.xxx(...)` juga tersedia, lihat WebViewManager).
+ *
+ * Command yang didukung:
+ *   setAuthToken(token)                    simpan token Sanctum ke TokenStore terenkripsi
+ *   clearAuthToken()
+ *   hasLocationPermission()   -> Boolean
+ *   startTracking(sessionId)               mulai foreground GPS service
+ *   stopTracking()
+ *   getTrackingStatus()       -> String JSON
+ *   getCurrentLocation()      -> String JSON  lokasi native terakhir (untuk validasi check-in)
+ *   openRouteMap()                         buka layar peta rute harian (MapLibre)
+ *   openNavigation(lat,lng,name)           buka peta (turn-by-turn belum tersedia)
+ *   enableKioskMode() / disableKioskMode() / isKioskModeActive()
+ *   logout()
  *
  * PENTING (Section 5): bridge tidak boleh membuka kemampuan native berbahaya
- * secara bebas. Semua command di bawah ini sengaja dibatasi hanya pada
- * operasi tracking/status yang sudah didefinisikan blueprint — tidak ada
- * command generik "run native code" / "exec" yang diekspos ke WebView.
+ * secara bebas. Semua command di bawah ini sengaja dibatasi hanya pada operasi
+ * yang sudah didefinisikan blueprint — tidak ada command generik "run native
+ * code" / "exec" yang diekspos ke WebView.
  */
 class WebViewBridge(
     private val context: Context,
@@ -31,6 +43,35 @@ class WebViewBridge(
 ) {
 
     private val gson = Gson()
+
+    // ---------------- Auth ----------------
+
+    @JavascriptInterface
+    fun setAuthToken(token: String) {
+        // Dipanggil Laravel setelah login sukses, agar Native (background service)
+        // bisa memanggil API secara independen dari WebView. Lihat TokenStore.kt.
+        TokenStore.getInstance(context).saveToken(token)
+    }
+
+    @JavascriptInterface
+    fun clearAuthToken() {
+        TokenStore.getInstance(context).clear()
+    }
+
+    @JavascriptInterface
+    fun logout() {
+        LocationService.stop(context)
+        TrackingPrefs.getInstance(context).clearSession()
+        TokenStore.getInstance(context).clear()
+        notifyWeb("STOPPED")
+    }
+
+    // ---------------- Tracking ----------------
+
+    @JavascriptInterface
+    fun hasLocationPermission(): Boolean {
+        return PermissionUtils.hasFineLocationPermission(context)
+    }
 
     @JavascriptInterface
     fun startTracking(trackingSessionId: Long) {
@@ -51,43 +92,86 @@ class WebViewBridge(
     @JavascriptInterface
     fun getTrackingStatus(): String {
         val state = LocationService.lifecycleState.value
-        val status = mapOf("status" to state.name)
-        return gson.toJson(status)
+        return gson.toJson(
+            mapOf(
+                "status" to state.name,
+                "tracking_session_id" to TrackingPrefs.getInstance(context).trackingSessionId
+            )
+        )
     }
 
+    /**
+     * Lokasi native terakhir. Dipakai halaman Laravel untuk validasi jarak
+     * saat Check In/Out, supaya tidak perlu memanggil navigator.geolocation
+     * di WebView (yang akurasinya lebih buruk dan bisa dimanipulasi).
+     *
+     * `available: false` berarti service tracking belum pernah menerima fix GPS
+     * sejak app dijalankan — halaman web harus menangani kondisi ini.
+     */
     @JavascriptInterface
     fun getCurrentLocation(): String {
-        // TODO (Phase B lanjutan): simpan last known LocationSnapshot di memory/DataStore
-        // dan kembalikan di sini. Untuk sekarang kembalikan status kosong yang aman.
-        return gson.toJson(mapOf("available" to false))
+        val location = LocationService.lastKnownLocation()
+            ?: return gson.toJson(mapOf("available" to false))
+
+        return gson.toJson(
+            mapOf(
+                "available" to true,
+                "latitude" to location.latitude,
+                "longitude" to location.longitude,
+                "accuracy" to location.accuracy,
+                "recorded_at_epoch_ms" to location.time
+            )
+        )
     }
 
+    // ---------------- Peta & navigasi ----------------
+
+    /** Buka layar peta rute harian (Section 25). */
+    @JavascriptInterface
+    fun openRouteMap() {
+        context.startActivity(
+            Intent(context, MapActivity::class.java).apply {
+                addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            }
+        )
+    }
+
+    /**
+     * Section 21. Saat ini membuka layar peta yang sama — belum ada mode
+     * turn-by-turn per-customer (butuh maneuver steps dari endpoint routing
+     * Laravel yang belum tersedia). Parameter tetap diterima agar kontrak JS
+     * di halaman Laravel tidak perlu diubah nanti.
+     */
     @JavascriptInterface
     fun openNavigation(latitude: Double, longitude: Double, customerName: String?) {
-        // TODO (Phase F): buka MapActivity / NavigationManager.
-        // Sengaja belum diaktifkan penuh agar prioritas Phase A-C selesai dulu (Section 39).
+        openRouteMap()
     }
 
     @JavascriptInterface
     fun stopNavigation() {
-        // TODO (Phase F)
+        // Tidak ada sesi navigasi persisten untuk dihentikan saat ini.
+        // Sales cukup menutup layar peta.
+    }
+
+    // ---------------- Kiosk (Section 27) ----------------
+    // Ini Screen Pinning, BUKAN kiosk Device Owner/MDM. Lihat KioskManager.kt.
+
+    @JavascriptInterface
+    fun enableKioskMode(): Boolean {
+        val activity = context as? Activity ?: return false
+        return KioskManager.enable(activity)
     }
 
     @JavascriptInterface
-    fun setAuthToken(token: String) {
-        // Dipanggil Laravel setelah login sukses, agar Native (background service)
-        // bisa memanggil API secara independen dari WebView. Lihat TokenStore.kt.
-        TokenStore.getInstance(context).saveToken(token)
+    fun disableKioskMode(): Boolean {
+        val activity = context as? Activity ?: return false
+        return KioskManager.disable(activity)
     }
 
     @JavascriptInterface
-    fun clearAuthToken() {
-        TokenStore.getInstance(context).clear()
-    }
+    fun isKioskModeActive(): Boolean = KioskManager.isActive(context)
 
-    private fun hasLocationPermission(): Boolean {
-        return PermissionUtils.hasFineLocationPermission(context)
-    }
+    // ---------------- Internal ----------------
 
     /** Kirim event balik ke halaman Laravel lewat evaluateJavascript. */
     private fun notifyWeb(status: String) {
@@ -98,7 +182,10 @@ class WebViewBridge(
     }
 
     companion object {
-        /** Nama object JS: window.Android.startTracking(...) dst. */
+        /** Nama object JS utama: window.Android.startTracking(...) dst. */
         const val JS_INTERFACE_NAME = "Android"
+
+        /** Alias, supaya halaman yang sudah pakai window.SalesNative tetap jalan. */
+        const val JS_INTERFACE_ALIAS = "SalesNative"
     }
 }

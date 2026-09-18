@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.company.salesapp-mergeDebugResources-44:/layout/activity_map.xml",
+        "source": "com.company.salesapp-main-47:/layout/activity_map.xml"
+    },
+    {
+        "merged": "com.company.salesapp-mergeDebugResources-44:/layout/activity_main.xml",
+        "source": "com.company.salesapp-main-47:/layout/activity_main.xml"
+    }
+]
