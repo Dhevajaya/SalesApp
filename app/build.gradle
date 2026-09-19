@@ -21,7 +21,10 @@ android {
         // DEV (Laragon lokal, diakses dari Android Emulator):
         // buildConfigField "String", "BASE_URL", "\"http://10.0.2.2:8000/\""
         // DEV (Laragon lokal, diakses dari HP FISIK lewat WiFi yang sama):
-        buildConfigField "String", "BASE_URL", "\"http://192.168.1.11:8000/\""
+        // Diupdate 2026-09-19: IP WiFi PC berubah dari 192.168.1.11 ke
+        // 192.168.18.46 (cek ulang lewat `ipconfig` kalau timeout lagi --
+        // IP ini bisa berubah tiap kali PC reconnect ke WiFi/DHCP lease baru).
+        buildConfigField "String", "BASE_URL", "\"http://192.168.18.46:8000/\""
         // Ganti ke domain produksi nanti, contoh:
         // buildConfigField "String", "BASE_URL", "\"https://domain-perusahaan.com/\""
     }

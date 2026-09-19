@@ -10,6 +10,7 @@ import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationResult
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.location.Priority
+import com.google.android.gms.tasks.CancellationTokenSource
 
 /**
  * Wrapper physical GPS (Fused Location Provider).
@@ -44,5 +45,25 @@ class AppLocationManager(context: Context) {
     fun stopUpdates() {
         callback?.let { fusedClient.removeLocationUpdates(it) }
         callback = null
+    }
+
+    /**
+     * Ambil SATU titik lokasi (bukan stream terus-menerus). Dipakai untuk
+     * fitur yang butuh GPS sesaat di luar sesi tracking aktif -- mis.
+     * Tagging Toko -- yang TIDAK bisa mengandalkan LocationService.lastKnownLocation()
+     * karena service itu hanya terisi selama tracking berjalan.
+     *
+     * Tidak memakai WebView navigator.geolocation sama sekali karena Chromium
+     * (mesin WebView) menolak Geolocation API di origin non-HTTPS selain
+     * localhost -- BASE_URL dev (http://IP-LAN:8000) selalu dianggap origin
+     * tidak aman, jadi permintaan lokasi lewat browser API akan SELALU gagal
+     * di WebView modern walau izin Android sudah diberikan.
+     */
+    @SuppressLint("MissingPermission") // permission divalidasi sebelum method ini dipanggil
+    fun requestSingleLocation(onResult: (Location?) -> Unit) {
+        val cancellationTokenSource = CancellationTokenSource()
+        fusedClient.getCurrentLocation(Priority.PRIORITY_HIGH_ACCURACY, cancellationTokenSource.token)
+            .addOnSuccessListener { location -> onResult(location) }
+            .addOnFailureListener { onResult(null) }
     }
 }

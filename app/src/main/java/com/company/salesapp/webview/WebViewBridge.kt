@@ -6,6 +6,7 @@ import android.content.Intent
 import android.webkit.JavascriptInterface
 import android.webkit.WebView
 import com.company.salesapp.device.KioskManager
+import com.company.salesapp.location.AppLocationManager
 import com.company.salesapp.location.LocationService
 import com.company.salesapp.map.MapActivity
 import com.company.salesapp.network.TokenStore
@@ -26,7 +27,8 @@ import com.google.gson.Gson
  *   startTracking(sessionId)               mulai foreground GPS service
  *   stopTracking()
  *   getTrackingStatus()       -> String JSON
- *   getCurrentLocation()      -> String JSON  lokasi native terakhir (untuk validasi check-in)
+ *   getCurrentLocation()      -> String JSON  lokasi native terakhir dari tracking (untuk validasi check-in)
+ *   requestCurrentLocation()                 ambil 1 titik GPS one-shot (async), hasil lewat window.onNativeLocationResult(json)
  *   openRouteMap()                         buka layar peta rute harian (MapLibre)
  *   openNavigation(lat,lng,name)           buka peta (turn-by-turn belum tersedia)
  *   enableKioskMode() / disableKioskMode() / isKioskModeActive()
@@ -43,6 +45,7 @@ class WebViewBridge(
 ) {
 
     private val gson = Gson()
+    private val oneShotLocationManager by lazy { AppLocationManager(context) }
 
     // ---------------- Auth ----------------
 
@@ -124,6 +127,42 @@ class WebViewBridge(
         )
     }
 
+    /**
+     * Versi ASYNC/one-shot: dipakai halaman yang butuh GPS di luar sesi
+     * tracking aktif (mis. form Tagging Toko), TIDAK bergantung pada
+     * LocationService yang sedang berjalan. Hasil dikirim balik lewat
+     * window.onNativeLocationResult(json) karena JavascriptInterface tidak
+     * bisa langsung me-return nilai dari operasi async.
+     *
+     * Ini sengaja dipisah dari getCurrentLocation() (yang tetap dipertahankan
+     * untuk validasi jarak check-in memakai posisi tracking yang sudah ada)
+     * supaya tidak mengubah kontrak JS yang sudah dipakai fitur lain.
+     */
+    @JavascriptInterface
+    fun requestCurrentLocation() {
+        if (!hasLocationPermission()) {
+            notifyLocationResult(gson.toJson(mapOf("available" to false, "reason" to "PERMISSION_DENIED")))
+            return
+        }
+
+        oneShotLocationManager.requestSingleLocation { location ->
+            val json = if (location != null) {
+                gson.toJson(
+                    mapOf(
+                        "available" to true,
+                        "latitude" to location.latitude,
+                        "longitude" to location.longitude,
+                        "accuracy" to location.accuracy,
+                        "recorded_at_epoch_ms" to location.time
+                    )
+                )
+            } else {
+                gson.toJson(mapOf("available" to false, "reason" to "NO_FIX"))
+            }
+            notifyLocationResult(json)
+        }
+    }
+
     // ---------------- Peta & navigasi ----------------
 
     /** Buka layar peta rute harian (Section 25). */
@@ -177,6 +216,14 @@ class WebViewBridge(
     private fun notifyWeb(status: String) {
         webView.post {
             val js = "if (window.onNativeTrackingStatus) { window.onNativeTrackingStatus('$status'); }"
+            webView.evaluateJavascript(js, null)
+        }
+    }
+
+    /** Kirim hasil requestCurrentLocation() balik ke halaman Laravel. */
+    private fun notifyLocationResult(json: String) {
+        webView.post {
+            val js = "if (window.onNativeLocationResult) { window.onNativeLocationResult($json); }"
             webView.evaluateJavascript(js, null)
         }
     }

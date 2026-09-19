@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Bitmap
 import android.webkit.CookieManager
+import android.webkit.GeolocationPermissions
 import android.webkit.WebChromeClient
 import android.webkit.WebResourceError
 import android.webkit.WebResourceRequest
@@ -11,6 +12,7 @@ import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import com.company.salesapp.BuildConfig
+import com.company.salesapp.utils.PermissionUtils
 
 /**
  * Section 4 blueprint - WebView.
@@ -45,6 +47,13 @@ class WebViewManager(
             mixedContentMode = WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE
             mediaPlaybackRequiresUserGesture = false
             setSupportZoom(false)
+            // Tanpa ini, navigator.geolocation.getCurrentPosition() di halaman
+            // Laravel (mis. form Tagging Toko) SELALU gagal di dalam WebView,
+            // walau permission ACCESS_FINE_LOCATION sudah diizinkan di Android-nya
+            // (lihat MainActivity.requestLocationPermissionFlow) -- WebView punya
+            // gate izin geolocation terpisah, harus dijawab lewat
+            // onGeolocationPermissionsShowPrompt di WebChromeClient di bawah.
+            setGeolocationEnabled(true)
         }
 
         // Cookie login Laravel (session) tetap disimpan agar WebView tidak perlu login ulang
@@ -96,6 +105,21 @@ class WebViewManager(
             override fun onProgressChanged(view: WebView?, newProgress: Int) {
                 super.onProgressChanged(view, newProgress)
                 callback?.onProgressChanged(newProgress)
+            }
+
+            // Jawab prompt izin geolocation WebView secara otomatis: origin di
+            // sini SELALU halaman Laravel sendiri (BASE_URL yang sama, bukan
+            // situs pihak ketiga), jadi aman di-grant otomatis kalau user
+            // sudah memberi izin ACCESS_FINE_LOCATION ke aplikasi Android-nya.
+            // Kalau permission Android belum ada, tolak di sini supaya callback
+            // error JS (navigator.geolocation gagal) langsung terpicu dengan
+            // pesan yang jelas, bukan menggantung/timeout.
+            override fun onGeolocationPermissionsShowPrompt(
+                origin: String?,
+                callback: GeolocationPermissions.Callback?
+            ) {
+                val granted = PermissionUtils.hasFineLocationPermission(context)
+                callback?.invoke(origin, granted, false)
             }
         }
     }

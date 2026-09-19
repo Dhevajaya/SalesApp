@@ -92,6 +92,15 @@ class MainActivity : AppCompatActivity() {
 
         updateOfflineBanner()
         requestNotificationPermissionIfNeeded()
+        // Tanpa panggilan ini, dialog izin ACCESS_FINE_LOCATION TIDAK PERNAH
+        // muncul ke user sama sekali (method ini sebelumnya ada tapi tidak
+        // dipanggil dari mana pun) -- akibatnya semua fitur yang butuh GPS
+        // (Tracking, Tagging Toko, Check In/Out) gagal diam-diam karena
+        // permission Android memang belum pernah diberikan. Diminta di awal
+        // (mengikuti pola requestNotificationPermissionIfNeeded di atas),
+        // bukan cuma saat buka halaman Tracking, supaya fitur GPS lain
+        // (mis. Tagging Toko) juga bisa langsung pakai begitu user login.
+        requestLocationPermissionFlow()
 
         SyncManager.schedulePeriodicSync(applicationContext)
     }
