@@ -1,15 +1,15 @@
-#Sat Sep 19 14:55:58 WIB 2026
-base.0=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.10=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.2=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
-base.4=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
-base.5=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
-base.6=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.7=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
-base.8=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
-base.9=E\:\\EMPATRA DIGITECH\\SalesApp\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+#Sat Sep 19 15:51:11 WIB 2026
+base.0=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.10=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+base.2=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+base.3=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
+base.4=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
+base.5=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+base.6=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.7=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.8=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\4\\classes.dex
+base.9=D\:\\Aplikasi\\AndroidStudioProjects\\Application\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.10=classes2.dex

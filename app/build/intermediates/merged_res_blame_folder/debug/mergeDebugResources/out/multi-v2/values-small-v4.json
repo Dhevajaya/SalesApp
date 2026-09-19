@@ -4,7 +4,7 @@
             "outputFile": "com.company.salesapp-mergeDebugResources-43:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ACER\\.gradle\\caches\\transforms-4\\a017f11b9418a19044fa71b85ee88f88\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
+                    "source": "C:\\Users\\DARKTAR\\.gradle\\caches\\transforms-4\\a017f11b9418a19044fa71b85ee88f88\\transformed\\material-1.12.0\\res\\values-small-v4\\values-small-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

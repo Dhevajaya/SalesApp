@@ -19,7 +19,7 @@
              PC reconnect ke WiFi/dapat DHCP lease baru (cek ulang lewat
              `ipconfig` di PC kalau tiba-tiba ERR_CLEARTEXT_NOT_PERMITTED
              atau ERR_CONNECTION_TIMED_OUT muncul lagi). Diupdate 2026-09-19. -->
-        <domain includeSubdomains="false">192.168.18.46</domain>
+        <domain includeSubdomains="false">192.168.18.99</domain>
     </domain-config>
 
     <base-config cleartextTrafficPermitted="false">
