@@ -44,15 +44,30 @@ class SyncWorker(
                     )
                 )
 
-                if (response.isSuccessful && response.body()?.success == true) {
-                    dao.markAttempt(event.locationEventId, SyncStatus.SYNCED, System.currentTimeMillis())
-                } else {
-                    dao.markAttempt(event.locationEventId, SyncStatus.FAILED, System.currentTimeMillis())
-                    hadFailure = true
+                when {
+                    response.isSuccessful && response.body()?.success == true -> {
+                        dao.markAttempt(event.locationEventId, SyncStatus.SYNCED, System.currentTimeMillis())
+                    }
+                    // PERBAIKAN AUDIT #11/#35: 401 (token invalid/habis), 403 (tidak
+                    // berhak), 400/422 (data tidak valid, mis. tracking_session_id
+                    // sudah tidak aktif) adalah kegagalan PERMANEN - mengulang
+                    // dengan payload yang sama pasti gagal lagi. Blueprint melarang
+                    // auto-retry untuk kasus ini, jadi ditandai REJECTED (bukan
+                    // FAILED) supaya keluar dari antrian getPendingBatch().
+                    response.code() == 401 || response.code() == 403 ||
+                        response.code() == 400 || response.code() == 422 -> {
+                        dao.markAttempt(event.locationEventId, SyncStatus.REJECTED, System.currentTimeMillis())
+                        // TIDAK di-set hadFailure = true: kegagalan permanen tidak
+                        // boleh memicu WorkManager backoff-retry Result.retry().
+                    }
+                    else -> {
+                        // 5xx / kode lain yang tidak terduga -> transient, boleh retry.
+                        dao.markAttempt(event.locationEventId, SyncStatus.FAILED, System.currentTimeMillis())
+                        hadFailure = true
+                    }
                 }
             } catch (e: Exception) {
-                // Network error / timeout -> tetap FAILED, akan di-retry oleh WorkManager
-                // atau immediate sync berikutnya. Data TIDAK dihapus.
+                // Network error / timeout -> transient, tetap FAILED supaya di-retry.
                 dao.markAttempt(event.locationEventId, SyncStatus.FAILED, System.currentTimeMillis())
                 hadFailure = true
             }

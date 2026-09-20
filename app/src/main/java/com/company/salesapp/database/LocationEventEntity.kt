@@ -37,4 +37,13 @@ object SyncStatus {
     const val SYNCING = "SYNCING"
     const val SYNCED = "SYNCED"
     const val FAILED = "FAILED"
+
+    /**
+     * PERBAIKAN AUDIT (Live_Sales_Field_Operations_Audit_2026-09-19, #11/#35):
+     * dipakai untuk 401/403/400/422 dari server - error PERMANEN yang tidak
+     * akan hilang dengan diulang (token invalid, validasi gagal, dsb).
+     * Baris dengan status ini SENGAJA tidak dimasukkan getPendingBatch() lagi,
+     * supaya SyncWorker tidak spam retry request yang pasti gagal terus.
+     */
+    const val REJECTED = "REJECTED"
 }

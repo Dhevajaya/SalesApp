@@ -77,9 +77,23 @@ class WebViewBridge(
     }
 
     @JavascriptInterface
+    fun hasBackgroundLocationPermission(): Boolean {
+        return PermissionUtils.hasBackgroundLocationPermission(context)
+    }
+
+    @JavascriptInterface
     fun startTracking(trackingSessionId: Long) {
-        if (!hasLocationPermission()) {
+        // PERBAIKAN AUDIT #9 (masalah 3): sebelumnya hanya cek fine-location,
+        // sehingga tracking bisa dinyatakan ACTIVE walau permission background
+        // belum diberikan - lalu diam-diam berhenti saat layar mati/app di
+        // background (OS mencabut akses lokasi). Sekarang background location
+        // WAJIB granted dulu sebelum service dinyalakan.
+        if (!PermissionUtils.hasFineLocationPermission(context)) {
             notifyWeb("PERMISSION_DENIED")
+            return
+        }
+        if (!PermissionUtils.hasBackgroundLocationPermission(context)) {
+            notifyWeb("BACKGROUND_PERMISSION_DENIED")
             return
         }
         LocationService.start(context, trackingSessionId)

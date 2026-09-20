@@ -75,6 +75,20 @@ data class RouteStopDto(
 )
 
 /**
+ * Satu langkah instruksi turn-by-turn (Blueprint #16/#34, PERBAIKAN AUDIT).
+ * `latitude`/`longitude` = titik maneuver ini terjadi; `routeOffsetMeters` =
+ * jarak kumulatif dari awal rute ke titik ini (dipakai NavigationManager
+ * untuk membandingkan progres Sales, BUKAN untuk memanggil TomTom ulang).
+ */
+data class RouteStepDto(
+    @SerializedName("message") val message: String?,
+    @SerializedName("maneuver") val maneuver: String?,
+    @SerializedName("latitude") val latitude: Double?,
+    @SerializedName("longitude") val longitude: Double?,
+    @SerializedName("route_offset_meters") val routeOffsetMeters: Int?
+)
+
+/**
  * Response GET /api/sales/routes/today dan POST /api/sales/routes/reroute.
  *
  * `source` menandai asal data menurut server: cache | provider | fallback.
@@ -88,7 +102,8 @@ data class RouteResponse(
     @SerializedName("distance_meters") val distanceMeters: Int?,
     @SerializedName("duration_seconds") val durationSeconds: Int?,
     @SerializedName("stops") val stops: List<RouteStopDto>?,
-    @SerializedName("geometry") val geometry: List<GeoPointDto>?
+    @SerializedName("geometry") val geometry: List<GeoPointDto>?,
+    @SerializedName("steps") val steps: List<RouteStepDto>? = null
 )
 
 /** Body POST /api/sales/routes/reroute — posisi Sales saat menyimpang. */

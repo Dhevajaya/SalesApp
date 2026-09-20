@@ -1,712 +1,712 @@
 -- Merging decision tree log ---
 application
-INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:28:5-80:19
-INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:28:5-80:19
-MERGED from [com.google.android.material:material:1.12.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.12.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
-MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:28:5-143:19
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:28:5-143:19
-MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\3a289d58864702ef696d35362fea9a28\transformed\play-services-location-21.3.0\AndroidManifest.xml:6:5-20
-MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\3a289d58864702ef696d35362fea9a28\transformed\play-services-location-21.3.0\AndroidManifest.xml:6:5-20
-MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:4:5-6:19
-MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:4:5-6:19
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a72f6930b092382525cee06caa1aefa3\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:4:5-20
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a72f6930b092382525cee06caa1aefa3\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:4:5-20
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:5:5-7:19
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:5:5-7:19
-MERGED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
-MERGED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:23:5-33:19
-MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
-MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
-MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\a71c9421aab446c9124ae3705ff82066\transformed\timber-5.0.1\AndroidManifest.xml:7:5-20
-MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\a71c9421aab446c9124ae3705ff82066\transformed\timber-5.0.1\AndroidManifest.xml:7:5-20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\b5029bc96e99083b4952fc0db6a68930\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\b5029bc96e99083b4952fc0db6a68930\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:28:5-80:19
+INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:28:5-80:19
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\ACER\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\ACER\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ACER\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ACER\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:28:5-143:19
+MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\ACER\.gradle\caches\transforms-4\3a289d58864702ef696d35362fea9a28\transformed\play-services-location-21.3.0\AndroidManifest.xml:6:5-20
+MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\ACER\.gradle\caches\transforms-4\3a289d58864702ef696d35362fea9a28\transformed\play-services-location-21.3.0\AndroidManifest.xml:6:5-20
+MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\ACER\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\ACER\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:4:5-6:19
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\ACER\.gradle\caches\transforms-4\a72f6930b092382525cee06caa1aefa3\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\ACER\.gradle\caches\transforms-4\a72f6930b092382525cee06caa1aefa3\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:4:5-20
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\ACER\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:5:5-7:19
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\ACER\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:5:5-7:19
+MERGED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:23:5-29:19
+MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\ACER\.gradle\caches\transforms-4\a71c9421aab446c9124ae3705ff82066\transformed\timber-5.0.1\AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\ACER\.gradle\caches\transforms-4\a71c9421aab446c9124ae3705ff82066\transformed\timber-5.0.1\AndroidManifest.xml:7:5-20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\b5029bc96e99083b4952fc0db6a68930\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\b5029bc96e99083b4952fc0db6a68930\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:25:5-31:19
 	android:extractNativeLibs
-		INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml
+		INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+		ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:33:9-41
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:33:9-41
 	android:roundIcon
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:32:9-54
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:32:9-54
 	tools:targetApi
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:37:9-29
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:37:9-29
 	android:icon
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:31:9-43
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:31:9-43
 	android:allowBackup
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:30:9-36
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:30:9-36
 	android:theme
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:36:9-46
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:36:9-46
 	android:networkSecurityConfig
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:34:9-69
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:34:9-69
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:29:9-33
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:29:9-33
 	android:usesCleartextTraffic
-		INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:35:9-63
+		INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:35:9-63
 manifest
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:2:1-82:12
-INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:2:1-82:12
-MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\555ea82464bb27e303ff3f1acdf085b9\transformed\viewbinding-8.5.2\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.material:material:1.12.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\d0f7c07dc54843eddf88d271013fcee0\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\323a8474e96d05d70317c83d3ce9d1d5\transformed\appcompat-1.7.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\df3584c8b3d99e6ca3606219226aca97\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\16aa2f256dbea122ac245e8c60ff3616\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\fb4d50212179cc06f77123c958bc5d6d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\39e837e392ce443c7a5b24f85addf66e\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\971f35571b0b756292485a01e865b2aa\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\d66a573737a30874b7189d4cb7992ff7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\38b5d4f71c5c7fdd120636772f509caf\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\efbc596fa5882f334f722f192e3d674d\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.work:work-runtime-ktx:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\557d89e216f9f9b079cee034686ef32f\transformed\work-runtime-ktx-2.9.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:17:1-145:12
-MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\3a289d58864702ef696d35362fea9a28\transformed\play-services-location-21.3.0\AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a72f6930b092382525cee06caa1aefa3\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:2:1-5:12
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\fd15760b16c6bf6ae387ae9b5ddd8e1c\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:2:1-20:12
-MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\6250e07ace5dd224c10ca891ba12d70d\transformed\fragment-1.8.2\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\8107e2a716d7069933e9f9d71185988f\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\86bd71150e94fe2f631232f4a5a33e4d\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\312147c1d351029295c64ac439e59895\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.8.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\50c612b4919fed2fa82d6e8be89a0904\transformed\activity-1.8.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\cb6c83c85b53c24e8aa74350702cb1d3\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
-MERGED from [org.maplibre.gl:maplibre-android-gestures:0.0.3] C:\Users\DARKTAR\.gradle\caches\transforms-4\b02a56cdf5b1ed267ef6f9c3d239325f\transformed\maplibre-android-gestures-0.0.3\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\b4534b5918f5e2c22aadddbf1e324cbc\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\b9021ff1f6696ac3890d685f86889355\transformed\lifecycle-livedata-core-ktx-2.8.4\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\13a0d4b395289df85b4e3fa1d8b14def\transformed\lifecycle-livedata-core-2.8.4\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\f7e2ba5421dd585cd5d51d94b3a4bc5b\transformed\lifecycle-livedata-2.8.4\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\2d6a4d45c1f2a1c40c4699aa2d6c0a2f\transformed\lifecycle-viewmodel-2.8.4\AndroidManifest.xml:2:1-5:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\8994f9f576fe2ddf688ca4aa20996add\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\c4b8b7523cb2331ab870d1b737782521\transformed\lifecycle-runtime-release\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\97efd45d92071c5cf56d857152e600d4\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\5b6bb3e002b4df83219b55764026f52d\transformed\lifecycle-service-2.8.4\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\bb3c4f6ce21c3bfa2eaf2ae005126d7a\transformed\lifecycle-viewmodel-savedstate-2.8.4\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\12d378acfb899157ba499e8c6ec571fe\transformed\core-ktx-1.13.1\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:17:1-31:12
-MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\0f2d173e47f73fb7dafecff1ded9eba6\transformed\room-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\ba6f6e3bf96ef5e838f9ecbe079dcb9d\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\b2e9d205b96fbbd8d3632ab68b29e434\transformed\sqlite-2.4.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\a71c9421aab446c9124ae3705ff82066\transformed\timber-5.0.1\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\7b503fb796a5da7b3476fb7e7ea4b762\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.security:security-crypto:1.1.0-alpha06] C:\Users\DARKTAR\.gradle\caches\transforms-4\a49ae539ce105293d7edc41d47d52db0\transformed\security-crypto-1.1.0-alpha06\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e6912ca46a25162a2dfeceb465fc266a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a31b2323c22cffd4e38109f73f8269b1\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\0057c3cadeab9151216ddcee1a4986cc\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\0cd56a3a54b988b720048f8a44b21332\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\b5029bc96e99083b4952fc0db6a68930\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\be4747266dae45f15c44fd850481cbba\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\6e7933b2471d1ab0136d4afad2690ef4\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\9ff7be1c53413cb483dbe3fbad3643d6\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\f87f258c7359d9d270e1b9c98ba28ec0\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:2:1-82:12
+INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:2:1-82:12
+MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\ACER\.gradle\caches\transforms-4\555ea82464bb27e303ff3f1acdf085b9\transformed\viewbinding-8.5.2\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\ACER\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ACER\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\ACER\.gradle\caches\transforms-4\d0f7c07dc54843eddf88d271013fcee0\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\ACER\.gradle\caches\transforms-4\323a8474e96d05d70317c83d3ce9d1d5\transformed\appcompat-1.7.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\df3584c8b3d99e6ca3606219226aca97\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\16aa2f256dbea122ac245e8c60ff3616\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\fb4d50212179cc06f77123c958bc5d6d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\ACER\.gradle\caches\transforms-4\39e837e392ce443c7a5b24f85addf66e\transformed\transition-1.5.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\971f35571b0b756292485a01e865b2aa\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\d66a573737a30874b7189d4cb7992ff7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\38b5d4f71c5c7fdd120636772f509caf\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\efbc596fa5882f334f722f192e3d674d\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.work:work-runtime-ktx:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\557d89e216f9f9b079cee034686ef32f\transformed\work-runtime-ktx-2.9.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:17:1-145:12
+MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\ACER\.gradle\caches\transforms-4\3a289d58864702ef696d35362fea9a28\transformed\play-services-location-21.3.0\AndroidManifest.xml:2:1-8:12
+MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\ACER\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\ACER\.gradle\caches\transforms-4\a72f6930b092382525cee06caa1aefa3\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\ACER\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\fd15760b16c6bf6ae387ae9b5ddd8e1c\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\ACER\.gradle\caches\transforms-4\6250e07ace5dd224c10ca891ba12d70d\transformed\fragment-1.8.2\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\8107e2a716d7069933e9f9d71185988f\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\86bd71150e94fe2f631232f4a5a33e4d\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\312147c1d351029295c64ac439e59895\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.8.1] C:\Users\ACER\.gradle\caches\transforms-4\50c612b4919fed2fa82d6e8be89a0904\transformed\activity-1.8.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\cb6c83c85b53c24e8aa74350702cb1d3\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:17:1-30:12
+MERGED from [org.maplibre.gl:maplibre-android-gestures:0.0.3] C:\Users\ACER\.gradle\caches\transforms-4\b02a56cdf5b1ed267ef6f9c3d239325f\transformed\maplibre-android-gestures-0.0.3\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ACER\.gradle\caches\transforms-4\b4534b5918f5e2c22aadddbf1e324cbc\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\b9021ff1f6696ac3890d685f86889355\transformed\lifecycle-livedata-core-ktx-2.8.4\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\13a0d4b395289df85b4e3fa1d8b14def\transformed\lifecycle-livedata-core-2.8.4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\f7e2ba5421dd585cd5d51d94b3a4bc5b\transformed\lifecycle-livedata-2.8.4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\2d6a4d45c1f2a1c40c4699aa2d6c0a2f\transformed\lifecycle-viewmodel-2.8.4\AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\8994f9f576fe2ddf688ca4aa20996add\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\c4b8b7523cb2331ab870d1b737782521\transformed\lifecycle-runtime-release\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\97efd45d92071c5cf56d857152e600d4\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\5b6bb3e002b4df83219b55764026f52d\transformed\lifecycle-service-2.8.4\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\bb3c4f6ce21c3bfa2eaf2ae005126d7a\transformed\lifecycle-viewmodel-savedstate-2.8.4\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\12d378acfb899157ba499e8c6ec571fe\transformed\core-ktx-1.13.1\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\0f2d173e47f73fb7dafecff1ded9eba6\transformed\room-ktx-2.6.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\ACER\.gradle\caches\transforms-4\ba6f6e3bf96ef5e838f9ecbe079dcb9d\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\ACER\.gradle\caches\transforms-4\b2e9d205b96fbbd8d3632ab68b29e434\transformed\sqlite-2.4.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\ACER\.gradle\caches\transforms-4\a71c9421aab446c9124ae3705ff82066\transformed\timber-5.0.1\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\ACER\.gradle\caches\transforms-4\7b503fb796a5da7b3476fb7e7ea4b762\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] C:\Users\ACER\.gradle\caches\transforms-4\a49ae539ce105293d7edc41d47d52db0\transformed\security-crypto-1.1.0-alpha06\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\e6912ca46a25162a2dfeceb465fc266a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\a31b2323c22cffd4e38109f73f8269b1\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-4\0057c3cadeab9151216ddcee1a4986cc\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\0cd56a3a54b988b720048f8a44b21332\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\b5029bc96e99083b4952fc0db6a68930\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\be4747266dae45f15c44fd850481cbba\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\6e7933b2471d1ab0136d4afad2690ef4\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\9ff7be1c53413cb483dbe3fbad3643d6\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\f87f258c7359d9d270e1b9c98ba28ec0\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 	package
-		INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml
+		INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml
+		INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml
+		INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:6:5-67
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:14:5-67
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:14:5-67
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:14:5-67
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:14:5-67
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:6:22-64
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:6:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:7:5-79
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:24:5-79
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:24:5-79
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:15:5-79
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:15:5-79
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:7:5-79
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:24:5-79
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:24:5-79
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:15:5-79
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:15:5-79
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:7:22-76
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:7:22-76
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:10:5-79
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:18:5-79
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:18:5-79
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:10:5-79
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:18:5-79
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:18:5-79
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:10:22-76
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:11:5-81
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:17:5-81
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:17:5-81
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:11:5-81
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:17:5-81
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:11:22-78
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:11:22-78
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:12:5-85
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:12:5-85
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:12:22-82
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:12:22-82
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:15:5-77
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:26:5-77
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:26:5-77
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:15:5-77
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:26:5-77
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:26:5-77
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:15:22-74
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:15:22-74
 uses-permission#android.permission.FOREGROUND_SERVICE_LOCATION
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:16:5-86
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:16:5-86
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:16:22-83
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:16:22-83
 uses-permission#android.permission.POST_NOTIFICATIONS
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:19:5-77
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:19:5-77
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:19:22-74
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:19:22-74
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:22:5-81
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:25:5-81
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:25:5-81
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:22:5-81
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:25:5-81
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:25:5-81
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:22:22-78
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:22:22-78
 uses-permission#android.permission.PACKAGE_USAGE_STATS
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:25:5-26:47
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:25:5-26:47
 	tools:ignore
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:26:9-44
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:26:9-44
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:25:22-75
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:25:22-75
 activity#com.company.salesapp.MainActivity
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:39:9-48:20
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:39:9-48:20
 	android:launchMode
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:42:13-43
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:42:13-43
 	android:exported
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:41:13-36
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:41:13-36
 	android:configChanges
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:43:13-74
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:43:13-74
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:40:13-41
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:40:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:44:13-47:29
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:44:13-47:29
 action#android.intent.action.MAIN
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:45:17-69
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:45:17-69
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:45:25-66
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:45:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:46:17-77
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:46:27-74
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:46:27-74
 activity#com.company.salesapp.map.MapActivity
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:52:9-56:77
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:52:9-56:77
 	android:label
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:55:13-46
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:55:13-46
 	android:exported
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:54:13-37
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:54:13-37
 	android:configChanges
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:56:13-74
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:56:13-74
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:53:13-44
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:53:13-44
 service#com.company.salesapp.location.LocationService
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:59:9-62:56
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:59:9-62:56
 	android:exported
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:61:13-37
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:61:13-37
 	android:foregroundServiceType
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:62:13-53
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:62:13-53
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:60:13-53
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:60:13-53
 receiver#com.company.salesapp.location.BootReceiver
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:68:9-76:20
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:68:9-76:20
 	android:enabled
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:70:13-35
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:70:13-35
 	android:exported
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:71:13-37
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:71:13-37
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:69:13-50
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:69:13-50
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.QUICKBOOT_POWERON
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:72:13-75:29
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:72:13-75:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:73:17-79
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:73:17-79
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:73:25-76
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:73:25-76
 action#android.intent.action.QUICKBOOT_POWERON
-ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:74:17-82
+ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:74:17-82
 	android:name
-		ADDED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml:74:25-79
+		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:74:25-79
 uses-sdk
-INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml
-INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml
-MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\555ea82464bb27e303ff3f1acdf085b9\transformed\viewbinding-8.5.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\555ea82464bb27e303ff3f1acdf085b9\transformed\viewbinding-8.5.2\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.material:material:1.12.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.12.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\d0f7c07dc54843eddf88d271013fcee0\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\d0f7c07dc54843eddf88d271013fcee0\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\323a8474e96d05d70317c83d3ce9d1d5\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\323a8474e96d05d70317c83d3ce9d1d5\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\df3584c8b3d99e6ca3606219226aca97\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\df3584c8b3d99e6ca3606219226aca97\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
-MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\16aa2f256dbea122ac245e8c60ff3616\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\16aa2f256dbea122ac245e8c60ff3616\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\fb4d50212179cc06f77123c958bc5d6d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\fb4d50212179cc06f77123c958bc5d6d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\39e837e392ce443c7a5b24f85addf66e\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.transition:transition:1.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\39e837e392ce443c7a5b24f85addf66e\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\971f35571b0b756292485a01e865b2aa\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\971f35571b0b756292485a01e865b2aa\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\d66a573737a30874b7189d4cb7992ff7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\d66a573737a30874b7189d4cb7992ff7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\38b5d4f71c5c7fdd120636772f509caf\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\38b5d4f71c5c7fdd120636772f509caf\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\efbc596fa5882f334f722f192e3d674d\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\efbc596fa5882f334f722f192e3d674d\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.work:work-runtime-ktx:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\557d89e216f9f9b079cee034686ef32f\transformed\work-runtime-ktx-2.9.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.work:work-runtime-ktx:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\557d89e216f9f9b079cee034686ef32f\transformed\work-runtime-ktx-2.9.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:21:5-44
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:21:5-44
-MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\3a289d58864702ef696d35362fea9a28\transformed\play-services-location-21.3.0\AndroidManifest.xml:4:5-44
-MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\3a289d58864702ef696d35362fea9a28\transformed\play-services-location-21.3.0\AndroidManifest.xml:4:5-44
-MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a72f6930b092382525cee06caa1aefa3\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a72f6930b092382525cee06caa1aefa3\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:3:5-44
-MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:3:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\fd15760b16c6bf6ae387ae9b5ddd8e1c\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\fd15760b16c6bf6ae387ae9b5ddd8e1c\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:5:5-44
-MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\6250e07ace5dd224c10ca891ba12d70d\transformed\fragment-1.8.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\6250e07ace5dd224c10ca891ba12d70d\transformed\fragment-1.8.2\AndroidManifest.xml:5:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\8107e2a716d7069933e9f9d71185988f\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\8107e2a716d7069933e9f9d71185988f\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\86bd71150e94fe2f631232f4a5a33e4d\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\86bd71150e94fe2f631232f4a5a33e4d\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\312147c1d351029295c64ac439e59895\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\312147c1d351029295c64ac439e59895\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\50c612b4919fed2fa82d6e8be89a0904\transformed\activity-1.8.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.8.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\50c612b4919fed2fa82d6e8be89a0904\transformed\activity-1.8.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\cb6c83c85b53c24e8aa74350702cb1d3\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\cb6c83c85b53c24e8aa74350702cb1d3\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
-MERGED from [org.maplibre.gl:maplibre-android-gestures:0.0.3] C:\Users\DARKTAR\.gradle\caches\transforms-4\b02a56cdf5b1ed267ef6f9c3d239325f\transformed\maplibre-android-gestures-0.0.3\AndroidManifest.xml:5:5-44
-MERGED from [org.maplibre.gl:maplibre-android-gestures:0.0.3] C:\Users\DARKTAR\.gradle\caches\transforms-4\b02a56cdf5b1ed267ef6f9c3d239325f\transformed\maplibre-android-gestures-0.0.3\AndroidManifest.xml:5:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\b4534b5918f5e2c22aadddbf1e324cbc\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\b4534b5918f5e2c22aadddbf1e324cbc\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\b9021ff1f6696ac3890d685f86889355\transformed\lifecycle-livedata-core-ktx-2.8.4\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\b9021ff1f6696ac3890d685f86889355\transformed\lifecycle-livedata-core-ktx-2.8.4\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\13a0d4b395289df85b4e3fa1d8b14def\transformed\lifecycle-livedata-core-2.8.4\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\13a0d4b395289df85b4e3fa1d8b14def\transformed\lifecycle-livedata-core-2.8.4\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\f7e2ba5421dd585cd5d51d94b3a4bc5b\transformed\lifecycle-livedata-2.8.4\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\f7e2ba5421dd585cd5d51d94b3a4bc5b\transformed\lifecycle-livedata-2.8.4\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\2d6a4d45c1f2a1c40c4699aa2d6c0a2f\transformed\lifecycle-viewmodel-2.8.4\AndroidManifest.xml:4:5-43
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\2d6a4d45c1f2a1c40c4699aa2d6c0a2f\transformed\lifecycle-viewmodel-2.8.4\AndroidManifest.xml:4:5-43
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\8994f9f576fe2ddf688ca4aa20996add\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\8994f9f576fe2ddf688ca4aa20996add\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\c4b8b7523cb2331ab870d1b737782521\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\c4b8b7523cb2331ab870d1b737782521\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:21:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\97efd45d92071c5cf56d857152e600d4\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\97efd45d92071c5cf56d857152e600d4\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\5b6bb3e002b4df83219b55764026f52d\transformed\lifecycle-service-2.8.4\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-service:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\5b6bb3e002b4df83219b55764026f52d\transformed\lifecycle-service-2.8.4\AndroidManifest.xml:5:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\bb3c4f6ce21c3bfa2eaf2ae005126d7a\transformed\lifecycle-viewmodel-savedstate-2.8.4\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\bb3c4f6ce21c3bfa2eaf2ae005126d7a\transformed\lifecycle-viewmodel-savedstate-2.8.4\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\12d378acfb899157ba499e8c6ec571fe\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\12d378acfb899157ba499e8c6ec571fe\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
-MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\0f2d173e47f73fb7dafecff1ded9eba6\transformed\room-ktx-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\0f2d173e47f73fb7dafecff1ded9eba6\transformed\room-ktx-2.6.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\ba6f6e3bf96ef5e838f9ecbe079dcb9d\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\ba6f6e3bf96ef5e838f9ecbe079dcb9d\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\b2e9d205b96fbbd8d3632ab68b29e434\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\b2e9d205b96fbbd8d3632ab68b29e434\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
-MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\a71c9421aab446c9124ae3705ff82066\transformed\timber-5.0.1\AndroidManifest.xml:5:5-44
-MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\a71c9421aab446c9124ae3705ff82066\transformed\timber-5.0.1\AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\7b503fb796a5da7b3476fb7e7ea4b762\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\7b503fb796a5da7b3476fb7e7ea4b762\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.security:security-crypto:1.1.0-alpha06] C:\Users\DARKTAR\.gradle\caches\transforms-4\a49ae539ce105293d7edc41d47d52db0\transformed\security-crypto-1.1.0-alpha06\AndroidManifest.xml:20:5-44
-MERGED from [androidx.security:security-crypto:1.1.0-alpha06] C:\Users\DARKTAR\.gradle\caches\transforms-4\a49ae539ce105293d7edc41d47d52db0\transformed\security-crypto-1.1.0-alpha06\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e6912ca46a25162a2dfeceb465fc266a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e6912ca46a25162a2dfeceb465fc266a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a31b2323c22cffd4e38109f73f8269b1\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\a31b2323c22cffd4e38109f73f8269b1\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\0057c3cadeab9151216ddcee1a4986cc\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\0057c3cadeab9151216ddcee1a4986cc\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\0cd56a3a54b988b720048f8a44b21332\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\0cd56a3a54b988b720048f8a44b21332\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\b5029bc96e99083b4952fc0db6a68930\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\b5029bc96e99083b4952fc0db6a68930\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\be4747266dae45f15c44fd850481cbba\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\be4747266dae45f15c44fd850481cbba\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\6e7933b2471d1ab0136d4afad2690ef4\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\6e7933b2471d1ab0136d4afad2690ef4\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\9ff7be1c53413cb483dbe3fbad3643d6\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\9ff7be1c53413cb483dbe3fbad3643d6\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\f87f258c7359d9d270e1b9c98ba28ec0\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\f87f258c7359d9d270e1b9c98ba28ec0\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml
+INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\ACER\.gradle\caches\transforms-4\555ea82464bb27e303ff3f1acdf085b9\transformed\viewbinding-8.5.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.databinding:viewbinding:8.5.2] C:\Users\ACER\.gradle\caches\transforms-4\555ea82464bb27e303ff3f1acdf085b9\transformed\viewbinding-8.5.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\ACER\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.12.0] C:\Users\ACER\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ACER\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ACER\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\ACER\.gradle\caches\transforms-4\d0f7c07dc54843eddf88d271013fcee0\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.7.0] C:\Users\ACER\.gradle\caches\transforms-4\d0f7c07dc54843eddf88d271013fcee0\transformed\appcompat-resources-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\ACER\.gradle\caches\transforms-4\323a8474e96d05d70317c83d3ce9d1d5\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.appcompat:appcompat:1.7.0] C:\Users\ACER\.gradle\caches\transforms-4\323a8474e96d05d70317c83d3ce9d1d5\transformed\appcompat-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\df3584c8b3d99e6ca3606219226aca97\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2-views-helper:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\df3584c8b3d99e6ca3606219226aca97\transformed\emoji2-views-helper-1.3.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:21:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\16aa2f256dbea122ac245e8c60ff3616\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\16aa2f256dbea122ac245e8c60ff3616\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\fb4d50212179cc06f77123c958bc5d6d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\fb4d50212179cc06f77123c958bc5d6d\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\ACER\.gradle\caches\transforms-4\39e837e392ce443c7a5b24f85addf66e\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.5.0] C:\Users\ACER\.gradle\caches\transforms-4\39e837e392ce443c7a5b24f85addf66e\transformed\transition-1.5.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\971f35571b0b756292485a01e865b2aa\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\971f35571b0b756292485a01e865b2aa\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\d66a573737a30874b7189d4cb7992ff7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\d66a573737a30874b7189d4cb7992ff7\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\38b5d4f71c5c7fdd120636772f509caf\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\38b5d4f71c5c7fdd120636772f509caf\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\efbc596fa5882f334f722f192e3d674d\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\efbc596fa5882f334f722f192e3d674d\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.work:work-runtime-ktx:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\557d89e216f9f9b079cee034686ef32f\transformed\work-runtime-ktx-2.9.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\557d89e216f9f9b079cee034686ef32f\transformed\work-runtime-ktx-2.9.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:21:5-44
+MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\ACER\.gradle\caches\transforms-4\3a289d58864702ef696d35362fea9a28\transformed\play-services-location-21.3.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-location:21.3.0] C:\Users\ACER\.gradle\caches\transforms-4\3a289d58864702ef696d35362fea9a28\transformed\play-services-location-21.3.0\AndroidManifest.xml:4:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\ACER\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\ACER\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\ACER\.gradle\caches\transforms-4\a72f6930b092382525cee06caa1aefa3\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.2.0] C:\Users\ACER\.gradle\caches\transforms-4\a72f6930b092382525cee06caa1aefa3\transformed\play-services-tasks-18.2.0\AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\ACER\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:3:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\ACER\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:3:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\fd15760b16c6bf6ae387ae9b5ddd8e1c\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\fd15760b16c6bf6ae387ae9b5ddd8e1c\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:5:5-44
+MERGED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\ACER\.gradle\caches\transforms-4\6250e07ace5dd224c10ca891ba12d70d\transformed\fragment-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.fragment:fragment:1.8.2] C:\Users\ACER\.gradle\caches\transforms-4\6250e07ace5dd224c10ca891ba12d70d\transformed\fragment-1.8.2\AndroidManifest.xml:5:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\8107e2a716d7069933e9f9d71185988f\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\8107e2a716d7069933e9f9d71185988f\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\86bd71150e94fe2f631232f4a5a33e4d\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\ACER\.gradle\caches\transforms-4\86bd71150e94fe2f631232f4a5a33e4d\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\312147c1d351029295c64ac439e59895\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\312147c1d351029295c64ac439e59895\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.1] C:\Users\ACER\.gradle\caches\transforms-4\50c612b4919fed2fa82d6e8be89a0904\transformed\activity-1.8.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.8.1] C:\Users\ACER\.gradle\caches\transforms-4\50c612b4919fed2fa82d6e8be89a0904\transformed\activity-1.8.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\cb6c83c85b53c24e8aa74350702cb1d3\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\cb6c83c85b53c24e8aa74350702cb1d3\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:20:5-44
+MERGED from [org.maplibre.gl:maplibre-android-gestures:0.0.3] C:\Users\ACER\.gradle\caches\transforms-4\b02a56cdf5b1ed267ef6f9c3d239325f\transformed\maplibre-android-gestures-0.0.3\AndroidManifest.xml:5:5-44
+MERGED from [org.maplibre.gl:maplibre-android-gestures:0.0.3] C:\Users\ACER\.gradle\caches\transforms-4\b02a56cdf5b1ed267ef6f9c3d239325f\transformed\maplibre-android-gestures-0.0.3\AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ACER\.gradle\caches\transforms-4\b4534b5918f5e2c22aadddbf1e324cbc\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\ACER\.gradle\caches\transforms-4\b4534b5918f5e2c22aadddbf1e324cbc\transformed\savedstate-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\b9021ff1f6696ac3890d685f86889355\transformed\lifecycle-livedata-core-ktx-2.8.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\b9021ff1f6696ac3890d685f86889355\transformed\lifecycle-livedata-core-ktx-2.8.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\13a0d4b395289df85b4e3fa1d8b14def\transformed\lifecycle-livedata-core-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\13a0d4b395289df85b4e3fa1d8b14def\transformed\lifecycle-livedata-core-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\f7e2ba5421dd585cd5d51d94b3a4bc5b\transformed\lifecycle-livedata-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\f7e2ba5421dd585cd5d51d94b3a4bc5b\transformed\lifecycle-livedata-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\2d6a4d45c1f2a1c40c4699aa2d6c0a2f\transformed\lifecycle-viewmodel-2.8.4\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\2d6a4d45c1f2a1c40c4699aa2d6c0a2f\transformed\lifecycle-viewmodel-2.8.4\AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\8994f9f576fe2ddf688ca4aa20996add\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\8994f9f576fe2ddf688ca4aa20996add\transformed\lifecycle-viewmodel-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\c4b8b7523cb2331ab870d1b737782521\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\c4b8b7523cb2331ab870d1b737782521\transformed\lifecycle-runtime-release\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\97efd45d92071c5cf56d857152e600d4\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\97efd45d92071c5cf56d857152e600d4\transformed\lifecycle-runtime-ktx-release\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\5b6bb3e002b4df83219b55764026f52d\transformed\lifecycle-service-2.8.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\5b6bb3e002b4df83219b55764026f52d\transformed\lifecycle-service-2.8.4\AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\bb3c4f6ce21c3bfa2eaf2ae005126d7a\transformed\lifecycle-viewmodel-savedstate-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\bb3c4f6ce21c3bfa2eaf2ae005126d7a\transformed\lifecycle-viewmodel-savedstate-2.8.4\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\12d378acfb899157ba499e8c6ec571fe\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\12d378acfb899157ba499e8c6ec571fe\transformed\core-ktx-1.13.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\0f2d173e47f73fb7dafecff1ded9eba6\transformed\room-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\0f2d173e47f73fb7dafecff1ded9eba6\transformed\room-ktx-2.6.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\ACER\.gradle\caches\transforms-4\ba6f6e3bf96ef5e838f9ecbe079dcb9d\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.4.0] C:\Users\ACER\.gradle\caches\transforms-4\ba6f6e3bf96ef5e838f9ecbe079dcb9d\transformed\sqlite-framework-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\ACER\.gradle\caches\transforms-4\b2e9d205b96fbbd8d3632ab68b29e434\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.4.0] C:\Users\ACER\.gradle\caches\transforms-4\b2e9d205b96fbbd8d3632ab68b29e434\transformed\sqlite-2.4.0\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\ACER\.gradle\caches\transforms-4\a71c9421aab446c9124ae3705ff82066\transformed\timber-5.0.1\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton.timber:timber:5.0.1] C:\Users\ACER\.gradle\caches\transforms-4\a71c9421aab446c9124ae3705ff82066\transformed\timber-5.0.1\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\ACER\.gradle\caches\transforms-4\7b503fb796a5da7b3476fb7e7ea4b762\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\ACER\.gradle\caches\transforms-4\7b503fb796a5da7b3476fb7e7ea4b762\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] C:\Users\ACER\.gradle\caches\transforms-4\a49ae539ce105293d7edc41d47d52db0\transformed\security-crypto-1.1.0-alpha06\AndroidManifest.xml:20:5-44
+MERGED from [androidx.security:security-crypto:1.1.0-alpha06] C:\Users\ACER\.gradle\caches\transforms-4\a49ae539ce105293d7edc41d47d52db0\transformed\security-crypto-1.1.0-alpha06\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\e6912ca46a25162a2dfeceb465fc266a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\e6912ca46a25162a2dfeceb465fc266a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:21:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\a31b2323c22cffd4e38109f73f8269b1\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\a31b2323c22cffd4e38109f73f8269b1\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-4\0057c3cadeab9151216ddcee1a4986cc\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\ACER\.gradle\caches\transforms-4\0057c3cadeab9151216ddcee1a4986cc\transformed\core-runtime-2.2.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\0cd56a3a54b988b720048f8a44b21332\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\0cd56a3a54b988b720048f8a44b21332\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\b5029bc96e99083b4952fc0db6a68930\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\b5029bc96e99083b4952fc0db6a68930\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\be4747266dae45f15c44fd850481cbba\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\be4747266dae45f15c44fd850481cbba\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\6e7933b2471d1ab0136d4afad2690ef4\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\6e7933b2471d1ab0136d4afad2690ef4\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\9ff7be1c53413cb483dbe3fbad3643d6\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\9ff7be1c53413cb483dbe3fbad3643d6\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\f87f258c7359d9d270e1b9c98ba28ec0\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\ACER\.gradle\caches\transforms-4\f87f258c7359d9d270e1b9c98ba28ec0\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
-		INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml
+		INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Aplikasi\AndroidStudioProjects\Application\app\src\main\AndroidManifest.xml
+		INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
-ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:29:9-37:20
-MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:29:9-37:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
-MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:29:9-37:20
+MERGED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:29:9-37:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ACER\.gradle\caches\transforms-4\4c5866c708d8bff2907eb5e10fe62d05\transformed\startup-runtime-1.1.1\AndroidManifest.xml:26:9-30:34
 	tools:node
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:28:13-31
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:28:13-31
 	android:authorities
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
 	android:exported
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
 meta-data#androidx.emoji2.text.EmojiCompatInitializer
-ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+		ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\ACER\.gradle\caches\transforms-4\faa1d12e1caf9998bebfcff6344168b6\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:23:5-68
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:23:5-68
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:23:22-65
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:23:22-65
 meta-data#androidx.work.WorkManagerInitializer
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:34:13-36:52
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:34:13-36:52
 	android:value
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:36:17-49
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:36:17-49
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:35:17-68
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:35:17-68
 service#androidx.work.impl.background.systemalarm.SystemAlarmService
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:39:9-45:35
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:39:9-45:35
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:42:13-72
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:42:13-72
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:43:13-37
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:43:13-37
 	tools:ignore
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:44:13-60
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:44:13-60
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:45:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:45:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:41:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:41:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:40:13-88
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:40:13-88
 service#androidx.work.impl.background.systemjob.SystemJobService
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:46:9-52:35
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:46:9-52:35
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:49:13-70
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:49:13-70
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:50:13-36
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:50:13-36
 	android:permission
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:51:13-69
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:51:13-69
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:52:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:52:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:48:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:48:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:47:13-84
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:47:13-84
 service#androidx.work.impl.foreground.SystemForegroundService
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:53:9-59:35
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:53:9-59:35
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:56:13-77
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:56:13-77
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:57:13-37
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:57:13-37
 	tools:ignore
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:58:13-60
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:58:13-60
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:59:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:59:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:55:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:55:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:54:13-81
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:54:13-81
 receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:61:9-66:35
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:61:9-66:35
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:64:13-35
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:64:13-35
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:65:13-37
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:65:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:66:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:66:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:63:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:63:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:62:13-88
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:62:13-88
 receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:67:9-77:20
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:67:9-77:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:70:13-36
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:70:13-36
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:71:13-37
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:71:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:72:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:72:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:69:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:69:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:68:13-106
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:68:13-106
 intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:73:13-76:29
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:73:13-76:29
 action#android.intent.action.ACTION_POWER_CONNECTED
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:74:17-87
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:74:17-87
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:74:25-84
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:74:25-84
 action#android.intent.action.ACTION_POWER_DISCONNECTED
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:75:17-90
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:75:17-90
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:75:25-87
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:75:25-87
 receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:78:9-88:20
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:78:9-88:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:81:13-36
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:81:13-36
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:82:13-37
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:82:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:83:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:83:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:80:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:80:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:79:13-104
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:79:13-104
 intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:84:13-87:29
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:84:13-87:29
 action#android.intent.action.BATTERY_OKAY
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:85:17-77
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:85:17-77
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:85:25-74
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:85:25-74
 action#android.intent.action.BATTERY_LOW
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:86:17-76
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:86:17-76
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:86:25-73
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:86:25-73
 receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:89:9-99:20
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:89:9-99:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:92:13-36
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:92:13-36
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:93:13-37
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:93:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:94:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:94:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:91:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:91:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:90:13-104
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:90:13-104
 intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:95:13-98:29
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:95:13-98:29
 action#android.intent.action.DEVICE_STORAGE_LOW
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:96:17-83
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:96:17-83
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:96:25-80
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:96:25-80
 action#android.intent.action.DEVICE_STORAGE_OK
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:97:17-82
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:97:17-82
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:97:25-79
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:97:25-79
 receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:100:9-109:20
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:100:9-109:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:103:13-36
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:103:13-36
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:104:13-37
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:104:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:105:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:105:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:102:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:102:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:101:13-103
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:101:13-103
 intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:106:13-108:29
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:106:13-108:29
 action#android.net.conn.CONNECTIVITY_CHANGE
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:107:17-79
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:107:17-79
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:107:25-76
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:107:25-76
 receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:110:9-121:20
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:110:9-121:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:113:13-36
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:113:13-36
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:114:13-37
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:114:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:115:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:115:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:112:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:112:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:111:13-88
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:111:13-88
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:116:13-120:29
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:116:13-120:29
 action#android.intent.action.TIME_SET
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:118:17-73
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:118:17-73
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:118:25-70
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:118:25-70
 action#android.intent.action.TIMEZONE_CHANGED
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:119:17-81
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:119:17-81
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:119:25-78
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:119:25-78
 receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:122:9-131:20
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:122:9-131:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:125:13-72
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:125:13-72
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:126:13-37
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:126:13-37
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:127:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:127:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:124:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:124:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:123:13-99
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:123:13-99
 intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:128:13-130:29
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:128:13-130:29
 action#androidx.work.impl.background.systemalarm.UpdateProxies
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:129:17-98
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:129:17-98
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:129:25-95
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:129:25-95
 receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:132:9-142:20
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:132:9-142:20
 	android:enabled
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:135:13-35
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:135:13-35
 	android:exported
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:136:13-36
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:136:13-36
 	android:permission
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:137:13-57
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:137:13-57
 	tools:targetApi
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:138:13-32
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:138:13-32
 	android:directBootAware
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:134:13-44
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:134:13-44
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:133:13-78
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:133:13-78
 intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:139:13-141:29
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:139:13-141:29
 action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
-ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:140:17-88
+ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:140:17-88
 	android:name
-		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:140:25-85
+		ADDED from [androidx.work:work-runtime:2.9.1] C:\Users\ACER\.gradle\caches\transforms-4\da2b91e7641c7a9830de2dee3dd58cb3\transformed\work-runtime-2.9.1\AndroidManifest.xml:140:25-85
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
+ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\ACER\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:9-173
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\ACER\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:146-170
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\ACER\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:86-145
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
+		ADDED from [com.google.android.gms:play-services-base:18.5.0] C:\Users\ACER\.gradle\caches\transforms-4\4792e7026fa7fad50b9ccf8c3c67a4fb\transformed\play-services-base-18.5.0\AndroidManifest.xml:5:19-85
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
+ADDED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\ACER\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:9-122
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\ACER\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:66-119
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\DARKTAR\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
+		ADDED from [com.google.android.gms:play-services-basement:18.4.0] C:\Users\ACER\.gradle\caches\transforms-4\e4f3abd046bac72de01a572d93021f59\transformed\play-services-basement-18.4.0\AndroidManifest.xml:6:20-65
 uses-feature#0x00030000
-ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:7:5-9:35
+ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:7:5-9:35
 	android:glEsVersion
-		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:8:9-41
+		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:8:9-41
 	android:required
-		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:9:9-32
+		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:9:9-32
 uses-feature#android.hardware.wifi
-ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:10:5-12:36
+ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:10:5-12:36
 	android:required
-		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:12:9-33
+		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:12:9-33
 	android:name
-		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:11:9-45
+		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:11:9-45
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:16:5-76
+ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:16:5-76
 	android:name
-		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\DARKTAR\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:16:22-73
+		ADDED from [org.maplibre.gl:android-sdk:11.5.2] C:\Users\ACER\.gradle\caches\transforms-4\35d39f7dfd7c8febc7c6a9c8482ba2d2\transformed\android-sdk-11.5.2\AndroidManifest.xml:16:22-73
 permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 permission#com.company.salesapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
-		ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+		ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
 	android:name
-		ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+		ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
 uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 uses-permission#com.company.salesapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
-ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
 	android:name
-		ADDED from [androidx.core:core:1.13.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+		ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\DARKTAR\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
+		ADDED from [androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\ACER\.gradle\caches\transforms-4\0e5e56f7e405f3fc40e6a6cdc6500f96\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
 service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
 	android:exported
-		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
 	tools:ignore
-		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:28:13-60
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:28:13-60
 	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
 	android:name
-		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+		ADDED from [androidx.room:room-runtime:2.6.1] C:\Users\ACER\.gradle\caches\transforms-4\e3988c07744789d0b6f41e4a6f898c95\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
 meta-data#androidx.profileinstaller.ProfileInstallerInitializer
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
 	android:value
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
 receiver#androidx.profileinstaller.ProfileInstallReceiver
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
 	android:enabled
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
 	android:exported
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
 	android:permission
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
 	android:directBootAware
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
 intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
 action#androidx.profileinstaller.action.INSTALL_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
 intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
 action#androidx.profileinstaller.action.SKIP_FILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
 intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
 action#androidx.profileinstaller.action.SAVE_PROFILE
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
 intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
 action#androidx.profileinstaller.action.BENCHMARK_OPERATION
-ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
 	android:name
-		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\DARKTAR\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+		ADDED from [androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\ACER\.gradle\caches\transforms-4\33d6df38c3576cba47223e2b3206cbcb\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92

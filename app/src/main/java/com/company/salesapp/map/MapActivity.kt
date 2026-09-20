@@ -57,8 +57,10 @@ import org.maplibre.geojson.Point
  * abu-abu supaya Sales tidak mengira itu rute jalan sungguhan).
  *
  * "Guidance" di layar ini disederhanakan: kamera mengikuti posisi Sales (follow-me)
- * + info stop berikutnya & sisa jarak. Ini BUKAN turn-by-turn navigation —
- * lihat catatan di NavigationManager.kt.
+ * + instruksi arah turn-by-turn dasar (teks + jarak ke maneuver berikutnya)
+ * bila server mengirim `steps`; fallback ke garis lurus ke stop berikutnya
+ * bila tidak. Lihat batasan jujur di NavigationManager.kt (tanpa voice
+ * guidance, tanpa map-matching/snap-to-road).
  *
  * Dibuka dari WebView lewat: window.Android.openRouteMap()
  */
@@ -78,6 +80,11 @@ class MapActivity : AppCompatActivity() {
     private var currentStops: List<RouteStopDto> = emptyList()
     private var followMeEnabled = false
     private var isRequestingUpdates = false
+
+    // PERBAIKAN AUDIT #16/#34: instance turn-by-turn untuk sesi navigasi ini,
+    // null kalau Laravel tidak mengirim `steps` (mis. mode fallback tanpa TomTom) -
+    // di kondisi itu tetap fallback ke guidance garis lurus seperti sebelumnya.
+    private var navigationManager: NavigationManager? = null
 
     private val locationCallback = object : LocationCallback() {
         override fun onLocationResult(result: LocationResult) {
@@ -130,6 +137,8 @@ class MapActivity : AppCompatActivity() {
             }
 
             currentStops = stops
+            val steps = renderable.route.steps.orEmpty()
+            navigationManager = if (steps.isNotEmpty()) NavigationManager(steps) else null
             renderRoute(renderable)
             showStatus(routeManager.sourceLabel(renderable))
             showRouteSummary(renderable)
@@ -311,7 +320,15 @@ class MapActivity : AppCompatActivity() {
 
     private fun updateGuidance(location: Location?) {
         val current = location?.let { GeoPoint(it.latitude, it.longitude) }
-        guidanceText.text = NavigationManager.guidanceText(currentStops, current)
+        val nav = navigationManager
+
+        guidanceText.text = if (nav != null) {
+            current?.let { nav.onLocationUpdate(it) }
+            nav.instructionText(current)
+        } else {
+            // Fallback: tidak ada `steps` dari server -> garis lurus ke stop berikutnya.
+            NavigationManager.guidanceText(currentStops, current)
+        }
         guidanceText.visibility = View.VISIBLE
     }
 

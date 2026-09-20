@@ -3,6 +3,8 @@
     <string name="notif_channel_tracking">Tracking Lokasi</string>
     <string name="notif_tracking_title">Tracking aktif</string>
     <string name="notif_tracking_text">Lokasi Anda sedang dikirim ke server</string>
+    <string name="notif_tracking_starting_text">Mencari sinyal GPS…</string>
+    <string name="notif_signal_lost_text">Sinyal GPS hilang — mencoba menyambung kembali…</string>
     <string name="permission_rationale_title">Izin Lokasi Diperlukan</string>
     <string name="permission_rationale_message">Aplikasi memerlukan akses lokasi untuk mencatat kunjungan dan rute Anda selama bekerja. Lokasi hanya digunakan saat sesi kerja aktif.</string>
 

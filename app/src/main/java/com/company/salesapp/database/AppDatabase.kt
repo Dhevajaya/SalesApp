@@ -4,14 +4,18 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.sqlite.db.SupportSQLiteDatabase
+import androidx.room.migration.Migration
 
 /**
  * version 1 -> 2 : penambahan tabel `route_cache` (offline route caching, Section 22 & 25).
  *
- * exportSchema di-set false selama fase development supaya Gradle tidak perlu
- * folder schema. Aktifkan kembali (+ set room.schemaLocation di build.gradle)
- * sebelum rilis produksi, bersamaan dengan penggantian
- * fallbackToDestructiveMigration() menjadi Migration resmi.
+ * PERBAIKAN AUDIT: fallbackToDestructiveMigration() DIHAPUS - sebelumnya
+ * setiap kenaikan versi DB akan MENGHAPUS SELURUH antrian lokasi offline
+ * Sales yang belum ter-sync (location_events), yang justru bertentangan
+ * dengan tujuan Local Queue itu sendiri (Section 12: jangan pernah
+ * kehilangan data lokasi). Sekarang pakai Migration resmi (MIGRATION_1_2)
+ * yang HANYA menambah tabel baru, tidak menyentuh data existing.
  */
 @Database(
     entities = [LocationEventEntity::class, RouteCacheEntity::class],
@@ -28,6 +32,30 @@ abstract class AppDatabase : RoomDatabase() {
         @Volatile
         private var INSTANCE: AppDatabase? = null
 
+        /**
+         * Skema harus persis sama dengan @Entity RouteCacheEntity di atas
+         * (kolom Kotlin non-nullable -> SQL NOT NULL, nullable -> boleh NULL).
+         */
+        val MIGRATION_1_2 = object : Migration(1, 2) {
+            override fun migrate(db: SupportSQLiteDatabase) {
+                db.execSQL(
+                    """
+                    CREATE TABLE IF NOT EXISTS `route_cache` (
+                        `routeDate` TEXT NOT NULL,
+                        `source` TEXT,
+                        `routeId` INTEGER,
+                        `distanceMeters` INTEGER,
+                        `durationSeconds` INTEGER,
+                        `geometryJson` TEXT NOT NULL,
+                        `stopsJson` TEXT NOT NULL,
+                        `savedAtEpochMs` INTEGER NOT NULL,
+                        PRIMARY KEY(`routeDate`)
+                    )
+                    """.trimIndent()
+                )
+            }
+        }
+
         fun getInstance(context: Context): AppDatabase {
             return INSTANCE ?: synchronized(this) {
                 INSTANCE ?: Room.databaseBuilder(
@@ -35,10 +63,7 @@ abstract class AppDatabase : RoomDatabase() {
                     AppDatabase::class.java,
                     "salesapp.db"
                 )
-                    // PERINGATAN: destructive migration MENGHAPUS antrian lokasi yang
-                    // belum ter-sync bila versi DB naik. Aman selama app belum dipakai
-                    // Sales beneran di lapangan. Ganti dengan Migration resmi sebelum rilis.
-                    .fallbackToDestructiveMigration()
+                    .addMigrations(MIGRATION_1_2)
                     .build()
                     .also { INSTANCE = it }
             }

@@ -24,6 +24,6 @@ interface LocationEventDao {
     @Query("UPDATE location_events SET syncStatus = :status, retryCount = retryCount + 1, lastAttemptAt = :attemptAt WHERE locationEventId = :id")
     suspend fun markAttempt(id: String, status: String, attemptAt: Long)
 
-    @Query("DELETE FROM location_events WHERE syncStatus = 'SYNCED' AND createdAtLocal < :olderThanEpochMillis")
+    @Query("DELETE FROM location_events WHERE syncStatus IN ('SYNCED', 'REJECTED') AND createdAtLocal < :olderThanEpochMillis")
     suspend fun purgeSynced(olderThanEpochMillis: Long)
 }

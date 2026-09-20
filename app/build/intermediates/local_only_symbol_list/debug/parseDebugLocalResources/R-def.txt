@@ -24,6 +24,8 @@ string map_permission_missing
 string map_route_unavailable
 string map_title
 string notif_channel_tracking
+string notif_signal_lost_text
+string notif_tracking_starting_text
 string notif_tracking_text
 string notif_tracking_title
 string permission_rationale_message

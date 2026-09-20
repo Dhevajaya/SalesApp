@@ -49,6 +49,19 @@ class LocationService : LifecycleService() {
     private lateinit var trackingPrefs: TrackingPrefs
     private lateinit var rerouteManager: RerouteManager
 
+    // PERBAIKAN AUDIT #9 (masalah 1 - SIGNAL_LOST watchdog): Handler timer yang
+    // di-reset setiap kali ADA callback GPS mentah (lolos filter processor atau
+    // tidak - yang penting perangkat masih dapat fix dari satelit/provider).
+    // Kalau timer ini sampai habis tanpa direset, berarti GPS benar-benar diam
+    // (bukan cuma difilter movement/accuracy), baru dinyatakan SIGNAL_LOST.
+    private val watchdogHandler = android.os.Handler(android.os.Looper.getMainLooper())
+    private val watchdogRunnable = Runnable {
+        if (_lifecycleState.value == ServiceLifecycleState.ACTIVE) {
+            _lifecycleState.value = ServiceLifecycleState.PAUSED_SIGNAL_LOST
+            updateNotification(getString(R.string.notif_signal_lost_text))
+        }
+    }
+
     override fun onCreate() {
         super.onCreate()
         locationManager = AppLocationManager(this)
@@ -84,11 +97,14 @@ class LocationService : LifecycleService() {
     }
 
     private fun startTracking() {
+        // PERBAIKAN AUDIT #9 (masalah 2): lifecycle TETAP STARTING sampai fix
+        // GPS pertama benar-benar diterima - tidak langsung diklaim ACTIVE
+        // hanya karena request update sudah didaftarkan ke FusedLocationProviderClient.
         _lifecycleState.value = ServiceLifecycleState.STARTING
         processor.reset()
 
         try {
-            startForeground(NOTIFICATION_ID, buildNotification(getString(R.string.notif_tracking_text)))
+            startForeground(NOTIFICATION_ID, buildNotification(getString(R.string.notif_tracking_starting_text)))
         } catch (e: Exception) {
             // Android 14+ bisa menolak startForeground bila izin lokasi dicabut tepat
             // sebelum service dimulai. Jangan crash — berhenti dengan bersih.
@@ -101,25 +117,39 @@ class LocationService : LifecycleService() {
         trackingPrefs.trackingActive = true
         trackingPrefs.trackingSessionId = currentTrackingSessionId
 
+        armWatchdog()
+
         locationManager.startUpdates(AppConfig.LOCATION_UPDATE_INTERVAL_MS) { location ->
+            // Callback mentah diterima -> sinyal GPS masih hidup, apapun hasil
+            // filter processor di bawah. Reset watchdog & pulihkan dari
+            // STARTING/SIGNAL_LOST ke ACTIVE di sini, BUKAN menunggu snapshot lolos filter.
+            armWatchdog()
+            if (_lifecycleState.value != ServiceLifecycleState.STOPPING &&
+                _lifecycleState.value != ServiceLifecycleState.ACTIVE
+            ) {
+                _lifecycleState.value = ServiceLifecycleState.ACTIVE
+                updateNotification(getString(R.string.notif_tracking_text))
+            }
+
             lastKnownLocation = location
 
             val snapshot = processor.process(location)
             if (snapshot != null) {
                 enqueueLocation(snapshot)
                 checkRouteDeviation(location)
-                _lifecycleState.value = ServiceLifecycleState.ACTIVE
             }
-            // Bila snapshot null (difilter accuracy/jarak), lifecycle tetap ACTIVE
-            // selama GPS masih memberi update; SIGNAL_LOST ditangani terpisah
-            // lewat timeout listener (TODO: tambahkan watchdog timer bila diperlukan).
         }
+    }
 
-        _lifecycleState.value = ServiceLifecycleState.ACTIVE
+    /** (Re)jadwalkan watchdog SIGNAL_LOST, dipanggil setiap ada callback GPS mentah. */
+    private fun armWatchdog() {
+        watchdogHandler.removeCallbacks(watchdogRunnable)
+        watchdogHandler.postDelayed(watchdogRunnable, AppConfig.SIGNAL_LOST_TIMEOUT_MS)
     }
 
     private fun stopTracking() {
         _lifecycleState.value = ServiceLifecycleState.STOPPING
+        watchdogHandler.removeCallbacks(watchdogRunnable)
         locationManager.stopUpdates()
         currentTrackingSessionId = null
         lastKnownLocation = null
@@ -181,7 +211,14 @@ class LocationService : LifecycleService() {
             .build()
     }
 
+    /** Perbarui teks notifikasi tanpa membuat notifikasi baru (mis. saat SIGNAL_LOST/ACTIVE berganti). */
+    private fun updateNotification(text: String) {
+        val manager = getSystemService(android.app.NotificationManager::class.java)
+        manager?.notify(NOTIFICATION_ID, buildNotification(text))
+    }
+
     override fun onDestroy() {
+        watchdogHandler.removeCallbacks(watchdogRunnable)
         locationManager.stopUpdates()
         _lifecycleState.value = ServiceLifecycleState.STOPPED
         super.onDestroy()

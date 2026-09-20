@@ -4182,6 +4182,8 @@ string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string notif_channel_tracking
+string notif_signal_lost_text
+string notif_tracking_starting_text
 string notif_tracking_text
 string notif_tracking_title
 string password_toggle_content_description

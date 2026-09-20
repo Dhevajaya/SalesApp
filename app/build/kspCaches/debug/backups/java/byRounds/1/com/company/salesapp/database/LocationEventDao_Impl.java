@@ -126,7 +126,7 @@ public final class LocationEventDao_Impl implements LocationEventDao {
       @Override
       @NonNull
       public String createQuery() {
-        final String _query = "DELETE FROM location_events WHERE syncStatus = 'SYNCED' AND createdAtLocal < ?";
+        final String _query = "DELETE FROM location_events WHERE syncStatus IN ('SYNCED', 'REJECTED') AND createdAtLocal < ?";
         return _query;
       }
     };
