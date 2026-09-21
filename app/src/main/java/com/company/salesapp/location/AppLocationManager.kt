@@ -61,9 +61,73 @@ class AppLocationManager(context: Context) {
      */
     @SuppressLint("MissingPermission") // permission divalidasi sebelum method ini dipanggil
     fun requestSingleLocation(onResult: (Location?) -> Unit) {
+        // getCurrentLocation() dapat mengembalikan null ketika device belum punya
+        // cached fix. Untuk fitur Tracking/Tagging, jangan anggap null sebagai
+        // GPS gagal: lanjutkan dengan requestLocationUpdates() dan ambil fix baru.
+        val mainHandler = android.os.Handler(Looper.getMainLooper())
         val cancellationTokenSource = CancellationTokenSource()
-        fusedClient.getCurrentLocation(Priority.PRIORITY_HIGH_ACCURACY, cancellationTokenSource.token)
-            .addOnSuccessListener { location -> onResult(location) }
-            .addOnFailureListener { onResult(null) }
+        var finished = false
+        var locationCallback: LocationCallback? = null
+
+        fun finish(location: Location?) {
+            if (finished) return
+            finished = true
+            locationCallback?.let { fusedClient.removeLocationUpdates(it) }
+            mainHandler.removeCallbacksAndMessages(null)
+            cancellationTokenSource.cancel()
+            onResult(location)
+        }
+
+        fun requestFreshFix() {
+            val request = LocationRequest.Builder(
+                Priority.PRIORITY_HIGH_ACCURACY,
+                1_000L
+            )
+                .setMinUpdateIntervalMillis(500L)
+                .setMaxUpdateDelayMillis(1_000L)
+                .build()
+
+            val callback = object : LocationCallback() {
+                override fun onLocationResult(result: LocationResult) {
+                    result.lastLocation?.let { finish(it) }
+                }
+            }
+            locationCallback = callback
+
+            try {
+                fusedClient.requestLocationUpdates(
+                    request,
+                    callback,
+                    Looper.getMainLooper()
+                ).addOnFailureListener {
+                    finish(null)
+                }
+
+                // Beri GPS waktu untuk mendapatkan fix baru. Jangan menggantung
+                // WebView selamanya jika GPS dimatikan/berada di indoor.
+                mainHandler.postDelayed({ finish(null) }, 15_000L)
+            } catch (_: SecurityException) {
+                finish(null)
+            }
+        }
+
+        try {
+            fusedClient.getCurrentLocation(
+                Priority.PRIORITY_HIGH_ACCURACY,
+                cancellationTokenSource.token
+            )
+                .addOnSuccessListener { location ->
+                    if (location != null) {
+                        finish(location)
+                    } else {
+                        requestFreshFix()
+                    }
+                }
+                .addOnFailureListener {
+                    requestFreshFix()
+                }
+        } catch (_: SecurityException) {
+            finish(null)
+        }
     }
 }

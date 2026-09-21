@@ -7,6 +7,7 @@ import android.webkit.JavascriptInterface
 import android.webkit.WebView
 import com.company.salesapp.device.KioskManager
 import com.company.salesapp.location.AppLocationManager
+import com.company.salesapp.MainActivity
 import com.company.salesapp.location.LocationService
 import com.company.salesapp.map.MapActivity
 import com.company.salesapp.network.TokenStore
@@ -81,21 +82,30 @@ class WebViewBridge(
         return PermissionUtils.hasBackgroundLocationPermission(context)
     }
 
+    /**
+     * Minta izin lokasi dari halaman Laravel. Ini penting bila user sebelumnya
+     * menekan "Nanti" pada dialog izin saat startup. Hasil permission dikirim
+     * kembali ke WebView lewat window.onNativeLocationPermissionResult().
+     */
+    @JavascriptInterface
+    fun requestLocationPermission() {
+        val activity = context as? MainActivity ?: return
+        activity.requestLocationPermissionFlow()
+    }
+
     @JavascriptInterface
     fun startTracking(trackingSessionId: Long) {
-        // PERBAIKAN AUDIT #9 (masalah 3): sebelumnya hanya cek fine-location,
-        // sehingga tracking bisa dinyatakan ACTIVE walau permission background
-        // belum diberikan - lalu diam-diam berhenti saat layar mati/app di
-        // background (OS mencabut akses lokasi). Sekarang background location
-        // WAJIB granted dulu sebelum service dinyalakan.
+        // Untuk Foreground Location Service, izin foreground location (fine)
+        // adalah prasyarat utama. ACCESS_BACKGROUND_LOCATION tidak boleh dijadikan
+        // blocker untuk memulai service dari halaman Tracking saat app sedang
+        // foreground. Pada Android 11+ permission background punya alur Settings
+        // tersendiri dan memblokir start di sini membuat server sudah ACTIVE tetapi
+        // native service tidak pernah berjalan.
         if (!PermissionUtils.hasFineLocationPermission(context)) {
             notifyWeb("PERMISSION_DENIED")
             return
         }
-        if (!PermissionUtils.hasBackgroundLocationPermission(context)) {
-            notifyWeb("BACKGROUND_PERMISSION_DENIED")
-            return
-        }
+
         LocationService.start(context, trackingSessionId)
         notifyWeb("ACTIVE")
     }

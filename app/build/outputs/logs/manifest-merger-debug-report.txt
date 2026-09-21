@@ -2,6 +2,7 @@
 application
 INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:28:5-80:19
 INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:28:5-80:19
+INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:28:5-80:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ACER\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\ACER\.gradle\caches\transforms-4\a017f11b9418a19044fa71b85ee88f88\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\ACER\.gradle\caches\transforms-4\31a6472955e4eba42135e4618eda1f07\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -38,6 +39,8 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\ACER\.gradle\cache
 		ADDED from [androidx.core:core:1.13.1] C:\Users\ACER\.gradle\caches\transforms-4\3534b4e1b9c8534aba6f119f8625c332\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 	android:label
 		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:33:9-41
+	android:testOnly
+		INJECTED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml
 	android:roundIcon
 		ADDED from E:\EMPATRA DIGITECH\SalesApp\app\src\main\AndroidManifest.xml:32:9-54
 	tools:targetApi

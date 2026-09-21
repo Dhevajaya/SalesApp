@@ -34,19 +34,28 @@ class MainActivity : AppCompatActivity() {
     private val foregroundLocationLauncher = registerForActivityResult(
         ActivityResultContracts.RequestMultiplePermissions()
     ) { results ->
-        val granted = results.values.any { it }
-        if (granted) {
-            requestBackgroundLocationIfNeeded()
-        } else {
-            Toast.makeText(this, "Izin lokasi ditolak. Tracking tidak akan berjalan.", Toast.LENGTH_LONG).show()
+        val granted = PermissionUtils.hasFineLocationPermission(this)
+
+        notifyWebLocationPermission(granted)
+
+        if (!granted) {
+            Toast.makeText(
+                this,
+                "Izin lokasi ditolak. Tracking tidak akan berjalan.",
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 
     private val backgroundLocationLauncher = registerForActivityResult(
         ActivityResultContracts.RequestPermission()
-    ) { _ ->
-        // Hasil background permission tidak menghentikan alur; foreground permission
-        // saja sudah cukup untuk tracking saat app di foreground (Section 8).
+    ) { granted ->
+        webView.post {
+            webView.evaluateJavascript(
+                "if (window.onNativeBackgroundLocationPermissionResult) { window.onNativeBackgroundLocationPermissionResult($granted); }",
+                null
+            )
+        }
     }
 
     private val notificationLauncher = registerForActivityResult(
@@ -121,7 +130,7 @@ class MainActivity : AppCompatActivity() {
      */
     fun requestLocationPermissionFlow() {
         if (PermissionUtils.hasFineLocationPermission(this)) {
-            requestBackgroundLocationIfNeeded()
+            notifyWebLocationPermission(true)
             return
         }
 
@@ -140,6 +149,16 @@ class MainActivity : AppCompatActivity() {
             !PermissionUtils.hasBackgroundLocationPermission(this)
         ) {
             backgroundLocationLauncher.launch(PermissionUtils.backgroundLocationPermission())
+        }
+    }
+
+    private fun notifyWebLocationPermission(granted: Boolean) {
+        if (!::webView.isInitialized) return
+        webView.post {
+            webView.evaluateJavascript(
+                "if (window.onNativeLocationPermissionResult) { window.onNativeLocationPermissionResult($granted); }",
+                null
+            )
         }
     }
 
